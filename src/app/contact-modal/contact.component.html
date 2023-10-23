@@ -1,0 +1,26 @@
+<form [formGroup]="FormData" (ngSubmit)="onSubmit()">
+  <div class="mb-3">
+    <label for="userEmail" class="form-label">Email address</label>
+    <input
+      formControlName="Email"
+      type="email"
+      class="form-control"
+      id="userEmail"
+      required
+    />
+  </div>
+  <div class="mb-3">
+    <label for="userMessage" class="form-label">Message</label>
+    <textarea
+      formControlName="Comment"
+      class="form-control"
+      id="userMessage"
+      rows="4"
+      required
+    ></textarea>
+  </div>
+  <div class="d-flex justify-content-center">
+    <button type="submit" class="btn btn-primary">Send</button>
+  </div>
+</form>
+<p *ngIf="responseMessage">{{ responseMessage }}</p>

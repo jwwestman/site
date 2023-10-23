@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "site-42f73": {
+      "hosting": {
+        "site": [
+          "site-42f73"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "site-42f73"
+  }
+}

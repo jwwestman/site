@@ -1,0 +1,103 @@
+.hero-section {
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.title {
+  margin-top: 80px;
+  text-align: left;
+}
+
+.social-icons i {
+  color: #000;
+  font-size: 24px;
+}
+
+.social-icons .btn-link {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: -5px;
+}
+#connect-button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.link {
+  margin-left: 20px;
+}
+
+.text-container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.index-card-title {
+  margin-top: 10px;
+  text-decoration: none;
+}
+.index-card {
+  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+  padding: 1rem;
+}
+.index-card-body {
+  margin-bottom: -0.75rem;
+}
+
+.index-card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+p.index-card-text {
+  width: 100%;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  overflow: hidden;
+}
+h5.index-card-title {
+  width: 100;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.index-card-body a.btn {
+  margin-bottom: 30px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+.project-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 10px;
+  margin-top: 30px;
+  height: 60px;
+}
+.project-title {
+  text-align: left;
+}
+@media (max-width: 800px) {
+  .hero-section {
+    height: 60vh;
+    padding: 25px;
+  }
+  .project-title {
+    text-align: center;
+  }
+  .project-container {
+    margin-top: 0px;
+  }
+  .img-fluid {
+    width: 100vw;
+  }
+}

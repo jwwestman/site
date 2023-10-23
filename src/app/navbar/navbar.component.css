@@ -1,0 +1,12 @@
+.navbar {
+  background-color: #009432;
+}
+.navbar a.navbar-brand,
+.navbar a.nav-link {
+  color: white;
+}
+.custom-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
