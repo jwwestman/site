@@ -1,16 +1,33 @@
 .hero-section {
-  height: 45vh;
+  height: 60vh;
+  max-width: 1000px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 40px;
+  margin-bottom: 10px;
   padding: 20px;
 }
-
+#avatar {
+  margin-top: 10px;
+  width: 100%; /* Set the width to 100% */
+  max-width: 250px; /* Maximum width it can take */
+}
+.work-section {
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+.experience-section {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+}
 .title {
   margin-top: 80px;
-  text-align: left;
 }
 
 .social-icons i {
@@ -18,7 +35,7 @@
   font-size: 24px;
 }
 .social-icons .btn-link:hover .bi-linkedin {
-  color: #8395a7; /* This is the LinkedIn blue color. */
+  color: #8395a7;
 }
 
 .social-icons .btn-link {
@@ -37,7 +54,6 @@
 
 .text-container {
   margin-top: 20px;
-  margin-bottom: 20px;
   text-align: left;
 }
 
@@ -90,6 +106,7 @@ h5.index-card-title {
 .project-title {
   text-align: left;
 }
+
 @media (max-width: 800px) {
   .hero-section {
     height: 60vh;
@@ -103,5 +120,26 @@ h5.index-card-title {
   }
   .img-fluid {
     width: 100vw;
+  }
+  #avatar {
+    max-width: 200px; /* Adjust the maximum width for mobile */
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-section {
+    height: 70vh;
+    padding: 25px;
+  }
+  #mobile-connect-button {
+    max-width: fit-content; /* Make the button as wide as its content */
+    margin-left: auto; /* Center the button */
+    margin-right: auto;
+    margin-top: 20px;
+  }
+}
+@media (min-width: 501px) {
+  #mobile-connect-button {
+    display: none;
   }
 }

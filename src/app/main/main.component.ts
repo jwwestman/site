@@ -1,5 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, HostListener } from '@angular/core';
 import { trigger, transition, style, animate } from '@angular/animations';
+import { SharedService } from '../shared.service';
+import { Modal } from 'bootstrap';
 
 @Component({
   selector: 'app-main',
@@ -12,23 +14,45 @@ import { trigger, transition, style, animate } from '@angular/animations';
   ],
 })
 export class MainComponent implements OnInit {
+  isMobile = false;
   staticTitle = 'Julie Westman';
+
+  @HostListener('window:resize')
+  onResize() {
+    this.isMobile = window.innerWidth <= 500;
+  }
+
   dynamicTitles = [
     'Senior UX Professional',
     'Digital Strategist 💻',
     'Product Owner 📈',
     'Fashionista 👜',
-    'Doodle Owner 🐶'
+    'Doodle Owner 🐶',
   ];
   currentTitleIndex = 0;
   showTitle = true;
 
   private interval: any;
 
-  ngOnInit(): void {
-    this.startAnimation();
-  }
+  constructor(private sharedService: SharedService) {}
 
+  ngOnInit() {
+    this.onResize();
+    this.startAnimation();
+
+    this.sharedService.showModal$.subscribe(() => {
+      const modalElement = document.getElementById('connectModal');
+      if (modalElement) {
+        const modal = new Modal(modalElement);
+        modal.show();
+      } else {
+        console.error('Modal element not found!');
+      }
+    });
+  }
+  onButtonClick() {
+    this.sharedService.triggerModal();
+  }
   startAnimation() {
     this.interval = setInterval(() => {
       this.showTitle = false;

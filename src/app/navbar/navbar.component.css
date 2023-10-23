@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #636e72;
+  height: 110px;
 }
 .navbar a.navbar-brand,
 .navbar a.nav-link {
@@ -10,6 +10,34 @@
   justify-content: center;
   align-items: center;
 }
-.navbar-brand {
-  margin-left: 20px;
+
+#connect-button {
+  margin-right: 30px;
+}
+.navbar-inner-container {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-middle-content {
+  flex-grow: 1;
+  text-align: center;
+}
+.mobile-navbar {
+  display: none;
+  height: 20px;
+  background-color: orange;
+}
+@media (max-width: 500px) {
+  .navbar {
+    display: none;
+  }
+  .mobile-navbar {
+    display: block;
+    margin-bottom: 20px;
+  }
 }

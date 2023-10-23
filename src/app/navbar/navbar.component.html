@@ -1,28 +1,21 @@
+<div class="mobile-navbar"></div>
 <nav class="navbar navbar-expand-lg">
-  <div class="container-fluid">
+  <div class="container-fluid navbar-inner-container">
     <a class="navbar-brand" href="#">
-      <img src="assets/jw-32px.png" alt="JW" style="height:32px;">
-  </a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarTogglerDemo02"
-      aria-controls="navbarTogglerDemo02"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <!-- <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Link</a>
-        </li> -->
-      </ul>
+      <img src="assets/j-logo-big.png" alt="JW" style="height: 64px" />
+    </a>
+
+    <div class="navbar-middle-content">
+      <!-- This is where you can add middle content if needed, like nav items -->
     </div>
+
+    <button
+      type="button"
+      id="connect-button"
+      class="btn btn btn-outline-success btn-lg"
+      (click)="onButtonClick()"
+    >
+      Let's Connect
+    </button>
   </div>
 </nav>
