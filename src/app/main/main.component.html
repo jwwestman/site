@@ -2,7 +2,13 @@
   <!-- Hero Section -->
   <div class="row">
     <div class="col-12 hero-section">
-      <h3 class="title">Julie Westman, Sr. UX Professional</h3>
+      <h3>
+        {{ staticTitle }}, 
+        <span *ngIf="showTitle" [@fadeOut]>
+          {{ dynamicTitles[currentTitleIndex] }}
+        </span>
+      </h3>
+
       <p class="text-container">
         I'm an experienced UX professional with a diverse background spanning
         Healthcare, Finance, Retail, and more. Known for my collaborative
@@ -19,14 +25,14 @@
           data-bs-toggle="modal"
           data-bs-target="#connectModal"
         >
-          Let's Connect
+          Send Email
         </button>
       </div>
-      <!-- <div class="social-icons d-flex justify-content-center">
-        <a href="#" class="btn btn-link"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="btn btn-link"><i class="bi bi-linkedin"></i></a>
-        <a href="#" class="btn btn-link"><i class="bi bi-envelope"></i></a>
-      </div> -->
+      <div class="social-icons d-flex justify-content-center">
+        <a href="https://www.linkedin.com/in/juliewestman/" class="btn btn-link"
+          ><i class="bi bi-linkedin"></i
+        ></a>
+      </div>
     </div>
   </div>
 
@@ -40,11 +46,7 @@
     <div class="row">
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="index-card mt-2">
-          <img
-            class="img-fluid"
-            src="https://picsum.photos/id/201/300/300"
-            alt="Responsive image"
-          />
+          <img class="img-fluid" src="assets/cvs.png" alt="Responsive image" />
           <div class="index-card-body">
             <h5 class="index-card-title">Company 1 - Project</h5>
             <p class="index-card-text">
@@ -58,11 +60,7 @@
       </div>
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="index-card mt-2">
-          <img
-            class="img-fluid"
-            src="https://picsum.photos/id/180/300/300"
-            alt="Responsive image"
-          />
+          <img class="img-fluid" src="assets/fido.png" alt="Responsive image" />
           <div class="index-card-body">
             <h5 class="index-card-title">Company 2 - Project</h5>
             <p class="index-card-text">
@@ -76,11 +74,7 @@
       </div>
       <div class="col-12 col-sm-6 col-lg-4">
         <div class="index-card mt-2">
-          <img
-            class="img-fluid"
-            src="https://picsum.photos/id/48/300/300"
-            alt="Responsive image"
-          />
+          <img class="img-fluid" src="assets/bofa.png" alt="Responsive image" />
           <div class="index-card-body">
             <h5 class="index-card-title">Company 3 - Project</h5>
             <p class="index-card-text">
