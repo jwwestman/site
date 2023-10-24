@@ -4,7 +4,6 @@
 }
 .hero-section {
   background-color: white;
-  height: 80vh;
   max-width: 1000px;
   display: flex;
   flex-direction: column;
@@ -15,6 +14,7 @@
   margin-bottom: 10px;
   padding: 20px;
 }
+
 .container-fluid {
   background-color: white;
 }
@@ -30,7 +30,7 @@
 .greeting-section {
   max-width: 1000px;
   padding: 35px;
-  color: white;
+  color: black;
   margin-left: auto;
   margin-right: auto;
 }
@@ -39,17 +39,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #636e72;
+  background-color: #d2dae2;
+  padding-bottom: 60px;
   width: 100vw;
   margin-left: auto;
   margin-right: auto;
 }
-.experience-section {
-  max-width: 1000px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 20px;
+
+mat-expansion-panel {
+  background-color: white;
+  width: 900px;
+  /* margin-bottom: 1px; */
 }
+
 .title {
   margin-top: 80px;
 }
@@ -81,59 +83,20 @@
   text-align: left;
 }
 
-.index-card-title {
-  margin-top: 10px;
-  text-decoration: none;
-}
-.index-card-body,
-.index-card-title,
-.project-title {
-  color: white;
-}
-/* .index-card {
-  box-shadow: 0 1px 10px 0 rgba(0, 0, 0, 0.15);
-  transition: 0.3s;
-  padding: 1rem;
-}
-.index-card-body {
-  margin-bottom: -0.75rem;
-}
-
-.index-card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-} */
-
-p.index-card-text {
-  width: 100%;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 5;
-  overflow: hidden;
-}
-h5.index-card-title {
-  width: 100;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 1;
-  overflow: hidden;
-  margin-bottom: 15px;
-}
-.index-card-body a.btn {
-  margin-bottom: 30px;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-}
 .project-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   margin-left: 10px;
-  /* margin-top: 30px; */
   height: 60px;
 }
 .project-title {
+  color: black;
   text-align: left;
+}
+.footer {
+  height: 40px;
+  background-color: black;
 }
 
 @media (max-width: 800px) {
@@ -151,7 +114,10 @@ h5.index-card-title {
     width: 100vw;
   }
   #avatar {
-    max-width: 200px; /* Adjust the maximum width for mobile */
+    max-width: 200px;
+  }
+  mat-expansion-panel {
+    width: 95vw;
   }
 }
 
