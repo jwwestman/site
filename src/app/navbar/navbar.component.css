@@ -1,43 +1,46 @@
 .navbar {
-  height: 110px;
-}
-.navbar a.navbar-brand,
-.navbar a.nav-link {
-  color: white;
-}
-.custom-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#connect-button {
-  margin-right: 30px;
-}
-.navbar-inner-container {
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.btn-link {
+  font-size: 20px;
+  color: black;
+}
+.navbar-brand {
+  margin-left: 25px;
+}
+.navbar-brand > img {
+  height: 50px;
+}
+.right-section {
+  display: flex;
+  align-items: center;
+  margin-right: 25px;
+}
+.date-time {
+  padding-right: 25px;
 }
 
 .navbar-middle-content {
-  flex-grow: 1;
-  text-align: center;
+  display: flex;
+  align-items: center; /* this vertically aligns items within the middle-content */
+  margin-right: 25px; /* push the content closer to the 'Let's Connect' button */
 }
-.mobile-navbar {
-  display: none;
-  height: 20px;
-  background-color: orange;
+
+.navbar-middle-content > * {
+  margin-right: 8px; /* reduce the space between the items */
 }
-@media (max-width: 500px) {
-  .navbar {
-    display: none;
-  }
-  .mobile-navbar {
-    display: block;
-    margin-bottom: 20px;
-  }
+
+.navbar-middle-content > *:last-child {
+  margin-right: 0; /* remove margin from the last item */
+}
+.navbar-middle-content .btn-link {
+  margin-right: -4px; /* adjust this value to your liking */
+}
+
+.navbar-middle-content .btn-link:last-child {
+  margin-right: 0; /* ensure the last button doesn't have extra margin on its right */
 }
