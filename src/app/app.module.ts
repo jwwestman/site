@@ -12,6 +12,11 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { CvsComponent } from './cvs/cvs.component';
+import { Router, RouterModule } from '@angular/router';
+import { AetnaComponent } from './aetna/aetna.component';
+import { BofaComponent } from './bofa/bofa.component';
+import { FidelityComponent } from './fidelity/fidelity.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +24,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     NavbarComponent,
     MainComponent,
     ContactComponent,
+    CvsComponent,
+    AetnaComponent,
+    BofaComponent,
+    FidelityComponent,
   ],
   imports: [
     BrowserModule,
@@ -29,6 +38,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     BrowserAnimationsModule,
     NgbModule,
     MatExpansionModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent],
