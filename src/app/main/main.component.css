@@ -2,6 +2,17 @@
   height: 1px;
   background-color: #636e72;
 }
+body {
+  margin: 0;
+}
+html {
+  padding: 0;
+}
+.container-fluid {
+  background-color: white;
+  padding: 0;
+}
+
 .hero-section {
   background-color: white;
   max-width: 1000px;
@@ -11,13 +22,8 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
-  margin-bottom: 10px;
-  padding: 20px;
 }
 
-.container-fluid {
-  background-color: white;
-}
 #avatar {
   margin-top: 20px;
   width: 100%;
@@ -30,16 +36,19 @@
 .greeting-section {
   max-width: 1000px;
   padding: 35px;
-  color: black;
+  color: white;
   margin-left: auto;
   margin-right: auto;
+}
+.recent-work-title {
+  color: white;
 }
 .work-section {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #d2dae2;
+  background-color: #353b48;
   padding-bottom: 60px;
   width: 100vw;
   margin-left: auto;
@@ -49,7 +58,6 @@
 mat-expansion-panel {
   background-color: white;
   width: 900px;
-  /* margin-bottom: 1px; */
 }
 
 .title {
@@ -60,81 +68,65 @@ mat-expansion-panel {
   color: #000;
   font-size: 24px;
 }
-.social-icons .btn-link:hover .bi-linkedin {
-  color: #8395a7;
-}
 
-.social-icons .btn-link {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  margin-left: -5px;
-}
-#connect-button {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.link {
-  margin-left: 20px;
-}
-
-.text-container {
-  margin-top: 20px;
-  text-align: left;
-}
-
-.project-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-left: 10px;
-  height: 60px;
-}
-.project-title {
-  color: black;
-  text-align: left;
-}
 .footer {
-  height: 40px;
+  height: 100px;
   background-color: black;
+}
+@media (max-width: 1000px) {
+  .work-section {
+    background-color: red;
+    width: 100vw;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  mat-expansion-panel {
+    background-color: white;
+    width: 90vw;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 800px) {
   .hero-section {
-    height: 60vh;
-    padding: 25px;
+    background-color: white;
+    max-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
   }
-  .project-title {
-    text-align: center;
-  }
-  .project-container {
-    margin-top: 0px;
-  }
+
   .img-fluid {
     width: 100vw;
   }
   #avatar {
-    max-width: 200px;
+    margin-top: 0px;
+    width: 100%;
+    max-width: 150px;
   }
   mat-expansion-panel {
-    width: 95vw;
+    background-color: white;
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .greeting-section {
+    margin-top: 10px;
+    padding: 5px;
   }
 }
 
 @media (max-width: 500px) {
   .hero-section {
-    height: 70vh;
-    padding: 25px;
+    height: 60vh;
+    padding: 5px;
+    margin-top: 5px;
   }
-  #mobile-connect-button {
-    max-width: fit-content; /* Make the button as wide as its content */
-    margin-left: auto; /* Center the button */
-    margin-right: auto;
-    margin-top: 20px;
-  }
-}
-@media (min-width: 501px) {
-  #mobile-connect-button {
-    display: none;
+  mat-expansion-panel {
+    background-color: white;
+    width: 90vw;
+    margin: 0 auto;
   }
 }

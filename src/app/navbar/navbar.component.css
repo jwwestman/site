@@ -13,7 +13,7 @@
   margin-left: 25px;
 }
 .navbar-brand > img {
-  height: 50px;
+  height: 36px;
 }
 .right-section {
   display: flex;
@@ -43,4 +43,13 @@
 
 .navbar-middle-content .btn-link:last-child {
   margin-right: 0; /* ensure the last button doesn't have extra margin on its right */
+}
+@media (max-width: 800px) {
+  .right-section {
+    display: none;
+  }
+  .navbar-brand {
+    display: block;
+    margin: 0 auto; /* Center the navbar-brand horizontally */
+  }
 }
