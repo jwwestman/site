@@ -80,63 +80,130 @@
       <mat-accordion>
         <!-- Expansion Panel #1 -->
         <mat-expansion-panel>
-          <mat-expansion-panel-header> Project 1 </mat-expansion-panel-header>
-          <p>Content for Panel 1 goes here.</p>
+          <mat-expansion-panel-header>
+            <p class="accordion-title">CVS Health</p>
+          </mat-expansion-panel-header>
+          <p class="accordion-text">
+            Kiosk PreCheck-in Experience; Revolutionizing Patient Check-Ins —
+            Explore how, as CVS Health's UX Lead, I harnessed Android tablets
+            and QR codes to transform the kiosk pre-check-in experience,
+            prioritizing patient satisfaction and streamlined healthcare
+            processes. <a [routerLink]="['cvs']">Read more...</a>
+          </p>
+          <p class="accordion-text">
+            Map-Centric Google Search & Maps Integration at Plan Level;
+            Unlocking Healthcare Access — See how I, as the UX Lead at Aetna
+            Behavioral Health, am driving an innovative map-centric web
+            prototype that simplifies finding top healthcare providers. Through
+            seamless Google Search API integration and unique pin icons, we
+            prioritize user-centric excellence.
+            <a [routerLink]="['cvs']">Read more...</a>
+          </p>
         </mat-expansion-panel>
 
         <!-- Expansion Panel #2 -->
         <mat-expansion-panel>
-          <mat-expansion-panel-header> Project 2 </mat-expansion-panel-header>
-          <p>Content for Panel 2 goes here.</p>
+          <mat-expansion-panel-header>
+            <p class="accordion-title">Aetna</p>
+          </mat-expansion-panel-header>
+          <p class="accordion-text">
+            Revolutionizing Patient Check-Ins: Explore how, as CVS Health's UX
+            Lead, I harnessed Android tablets and QR codes to transform the
+            kiosk pre-check-in experience, prioritizing patient satisfaction and
+            streamlined healthcare processes.
+            <a [routerLink]="['cvs']">Read more...</a>
+          </p>
         </mat-expansion-panel>
         <!-- Expansion Panel #3 -->
         <mat-expansion-panel>
-          <mat-expansion-panel-header> Project 3 </mat-expansion-panel-header>
-          <p>Content for Panel 3 goes here.</p>
+          <mat-expansion-panel-header>
+            <p class="accordion-title">
+              CVS Health — ​HealthHUB Kiosk PreCheck-in Experience
+            </p>
+          </mat-expansion-panel-header>
+          <p class="accordion-text">
+            Revolutionizing Patient Check-Ins: Explore how, as CVS Health's UX
+            Lead, I harnessed Android tablets and QR codes to transform the
+            kiosk pre-check-in experience, prioritizing patient satisfaction and
+            streamlined healthcare processes.
+            <a [routerLink]="['cvs']">Read more...</a>
+          </p>
         </mat-expansion-panel>
         <!-- Expansion Panel #4 -->
         <mat-expansion-panel>
-          <mat-expansion-panel-header> Project 4 </mat-expansion-panel-header>
-          <p>Content for Panel 4 goes here.</p>
+          <mat-expansion-panel-header>
+            <p class="accordion-title">
+              CVS Health — ​HealthHUB Kiosk PreCheck-in Experience
+            </p>
+          </mat-expansion-panel-header>
+          <p class="accordion-text">
+            Revolutionizing Patient Check-Ins: Explore how, as CVS Health's UX
+            Lead, I harnessed Android tablets and QR codes to transform the
+            kiosk pre-check-in experience, prioritizing patient satisfaction and
+            streamlined healthcare processes.
+            <a [routerLink]="['cvs']">Read more...</a>
+          </p>
         </mat-expansion-panel>
         <!-- Expansion Panel #5 -->
         <mat-expansion-panel>
-          <mat-expansion-panel-header> Project 5 </mat-expansion-panel-header>
-          <p>Content for Panel 5 goes here.</p>
+          <mat-expansion-panel-header>
+            <p class="accordion-title">
+              CVS Health — ​HealthHUB Kiosk PreCheck-in Experience
+            </p>
+          </mat-expansion-panel-header>
+          <p class="accordion-text">
+            Revolutionizing Patient Check-Ins: Explore how, as CVS Health's UX
+            Lead, I harnessed Android tablets and QR codes to transform the
+            kiosk pre-check-in experience, prioritizing patient satisfaction and
+            streamlined healthcare processes.
+            <a [routerLink]="['cvs']">Read more...</a>
+          </p>
         </mat-expansion-panel>
         <!-- Expansion Panel #6 -->
         <mat-expansion-panel>
-          <mat-expansion-panel-header> Project 6 </mat-expansion-panel-header>
-          <p>Content for Panel 6 goes here.</p>
+          <mat-expansion-panel-header>
+            <p class="accordion-title">
+              CVS Health — ​HealthHUB Kiosk PreCheck-in Experience
+            </p>
+          </mat-expansion-panel-header>
+          <p class="accordion-text">
+            Revolutionizing Patient Check-Ins: Explore how, as CVS Health's UX
+            Lead, I harnessed Android tablets and QR codes to transform the
+            kiosk pre-check-in experience, prioritizing patient satisfaction and
+            streamlined healthcare processes.
+            <a [routerLink]="['cvs']">Read more...</a>
+          </p>
         </mat-expansion-panel>
+        <!-- expansion panels end -->
+        <div class="footer"></div>
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="connectModal"
+          tabindex="-1"
+          aria-labelledby="connectModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="connectModalLabel">
+                  Let's Connect
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <app-contact></app-contact>
+              </div>
+            </div>
+          </div>
+        </div>
       </mat-accordion>
-    </div>
-    <!-- expansion panels end -->
-  </div>
-  <div class="footer"></div>
-  <!-- Modal -->
-  <div
-    class="modal fade"
-    id="connectModal"
-    tabindex="-1"
-    aria-labelledby="connectModalLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="connectModalLabel">Let's Connect</h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="modal-body">
-          <app-contact></app-contact>
-        </div>
-      </div>
     </div>
   </div>
 </div>
