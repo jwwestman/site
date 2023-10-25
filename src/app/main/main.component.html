@@ -1,15 +1,27 @@
-<div class="border-line"></div>
 <div class="container-fluid">
   <div class="hero-section row">
-    <div class="col-12 text-center">
-      <h1 class="title-section">Julie Westman, UX Professional</h1>
+    <div class="hero-container">
+      <div class="hero-header">
+        <h1 class="title-section">Julie Westman, UX Professional</h1>
 
-      <div class="bio-text">
-        <p>
-          I design beautifully simple things, and I love what I do.
-        </p>
+        <div class="bio-text">
+          <p>I design beautifully simple things, and I love what I do.</p>
+        </div>
       </div>
+      <div class="mobile-hero-header">
+        <h2 class="title-section">Julie Westman, UX Professional</h2>
 
+        <div class="bio-text mb-3">
+          <p>I design beautifully simple things.</p>
+        </div>
+      </div>
+      <div class="small-hero-header">
+        <h1 class="title-section">Julie Westman</h1>
+
+        <div class="bio-text mb-3">
+          <p>I design beautifully simple things.</p>
+        </div>
+      </div>
       <div class="avatar-section">
         <img
           class="img-fluid"
@@ -27,12 +39,29 @@
           alt="Responsive image"
         />
       </div>
+      <div class="mobile-contact-section">
+        <div class="social-icons">
+          <a
+            href="https://www.linkedin.com/in/juliewestman/"
+            class="btn btn-link"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+        </div>
+        <button
+          type="button"
+          id="connect-button"
+          class="btn btn btn-outline-dark"
+          (click)="onButtonClick()"
+        >
+          Let's Connect
+        </button>
+      </div>
     </div>
   </div>
 
   <div class="work-section text-center">
     <div class="greeting-section">
-      <h2 class="greeting-title mb-5">Hi, I’m Julie. Nice to meet you.</h2>
+      <h2 class="greeting-title">Hi, I’m Julie. Nice to meet you.</h2>
       <p class="greeting-text">
         I'm an experienced UX professional with a diverse background spanning
         Healthcare, Finance, Retail, and more. Known for my collaborative
@@ -48,40 +77,40 @@
     </div>
     <!-- expansion panels start -->
     <div class="project-section">
-    <mat-accordion>
-      <!-- Expansion Panel #1 -->
-      <mat-expansion-panel>
-        <mat-expansion-panel-header> Project 1 </mat-expansion-panel-header>
-        <p>Content for Panel 1 goes here.</p>
-      </mat-expansion-panel>
+      <mat-accordion>
+        <!-- Expansion Panel #1 -->
+        <mat-expansion-panel>
+          <mat-expansion-panel-header> Project 1 </mat-expansion-panel-header>
+          <p>Content for Panel 1 goes here.</p>
+        </mat-expansion-panel>
 
-      <!-- Expansion Panel #2 -->
-      <mat-expansion-panel>
-        <mat-expansion-panel-header> Project 2 </mat-expansion-panel-header>
-        <p>Content for Panel 2 goes here.</p>
-      </mat-expansion-panel>
-      <!-- Expansion Panel #3 -->
-      <mat-expansion-panel>
-        <mat-expansion-panel-header> Project 3 </mat-expansion-panel-header>
-        <p>Content for Panel 3 goes here.</p>
-      </mat-expansion-panel>
-      <!-- Expansion Panel #4 -->
-      <mat-expansion-panel>
-        <mat-expansion-panel-header> Project 4 </mat-expansion-panel-header>
-        <p>Content for Panel 4 goes here.</p>
-      </mat-expansion-panel>
-      <!-- Expansion Panel #5 -->
-      <mat-expansion-panel>
-        <mat-expansion-panel-header> Project 5 </mat-expansion-panel-header>
-        <p>Content for Panel 5 goes here.</p>
-      </mat-expansion-panel>
-      <!-- Expansion Panel #6 -->
-      <mat-expansion-panel>
-        <mat-expansion-panel-header> Project 6 </mat-expansion-panel-header>
-        <p>Content for Panel 6 goes here.</p>
-      </mat-expansion-panel>
-    </mat-accordion>
-  </div>
+        <!-- Expansion Panel #2 -->
+        <mat-expansion-panel>
+          <mat-expansion-panel-header> Project 2 </mat-expansion-panel-header>
+          <p>Content for Panel 2 goes here.</p>
+        </mat-expansion-panel>
+        <!-- Expansion Panel #3 -->
+        <mat-expansion-panel>
+          <mat-expansion-panel-header> Project 3 </mat-expansion-panel-header>
+          <p>Content for Panel 3 goes here.</p>
+        </mat-expansion-panel>
+        <!-- Expansion Panel #4 -->
+        <mat-expansion-panel>
+          <mat-expansion-panel-header> Project 4 </mat-expansion-panel-header>
+          <p>Content for Panel 4 goes here.</p>
+        </mat-expansion-panel>
+        <!-- Expansion Panel #5 -->
+        <mat-expansion-panel>
+          <mat-expansion-panel-header> Project 5 </mat-expansion-panel-header>
+          <p>Content for Panel 5 goes here.</p>
+        </mat-expansion-panel>
+        <!-- Expansion Panel #6 -->
+        <mat-expansion-panel>
+          <mat-expansion-panel-header> Project 6 </mat-expansion-panel-header>
+          <p>Content for Panel 6 goes here.</p>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </div>
     <!-- expansion panels end -->
   </div>
   <div class="footer"></div>

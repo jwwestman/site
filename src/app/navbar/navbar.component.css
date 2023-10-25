@@ -2,15 +2,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-left: 25px;
-  margin-right: 25px;
+  width: 100vw;
+  border-bottom: 1px solid #000;
 }
+
 .btn-link {
   font-size: 20px;
   color: black;
 }
+.border-line {
+  height: 1px;
+  background-color: #636e72;
+}
 .navbar-brand {
-  margin-left: 25px;
+  margin-left: 50px;
 }
 .navbar-brand > img {
   height: 36px;
@@ -18,7 +23,7 @@
 .right-section {
   display: flex;
   align-items: center;
-  margin-right: 25px;
+  margin-right: 50px;
 }
 .date-time {
   padding-right: 25px;
