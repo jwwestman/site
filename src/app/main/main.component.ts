@@ -1,6 +1,7 @@
 import { Component, OnInit, HostListener } from '@angular/core';
 import { trigger, transition, style, animate } from '@angular/animations';
 import { SharedService } from '../shared.service';
+import { Router } from '@angular/router';
 import { Modal } from 'bootstrap';
 
 @Component({
@@ -34,7 +35,7 @@ export class MainComponent implements OnInit {
 
   private interval: any;
 
-  constructor(private sharedService: SharedService) {}
+  constructor(private router: Router, private sharedService: SharedService) {}
 
   ngOnInit() {
     this.onResize();

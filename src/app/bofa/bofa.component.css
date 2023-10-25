@@ -1,0 +1,14 @@
+.container-fluid {
+  background-color: #dfe6e9;
+  height: 100vh;
+  width: 100vw;
+}
+.text-area {
+  background-color: white;
+  max-width: 1000px;
+  height: 80vh;
+
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+}

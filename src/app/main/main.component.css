@@ -24,7 +24,7 @@ html {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 75vh;
+  height: 71.5vh;
 }
 .mobile-hero-header {
   display: none;
@@ -48,6 +48,12 @@ html {
   color: white;
   margin-left: auto;
   margin-right: auto;
+}
+.greeting-title {
+  margin-top: 80px;
+}
+.project-title {
+  text-align: left;
 }
 .recent-work-title {
   color: white;
@@ -156,7 +162,7 @@ mat-expansion-panel {
   }
   .greeting-text {
     margin-top: 15px;
-    text-align: left;
+    text-align: center;
     padding: 10px;
   }
 }
