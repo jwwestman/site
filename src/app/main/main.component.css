@@ -111,6 +111,7 @@ mat-expansion-panel-header {
 }
 .accordion-text {
   font-family: "Roboto Mono", monospace;
+  text-align: left;
 }
 .title {
   margin-top: 80px;
