@@ -18,6 +18,7 @@ import { RouterModule } from '@angular/router';
 import { AetnaComponent } from './aetna/aetna.component';
 import { BofaComponent } from './bofa/bofa.component';
 import { FidelityComponent } from './fidelity/fidelity.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { FidelityComponent } from './fidelity/fidelity.component';
     AetnaComponent,
     BofaComponent,
     FidelityComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
