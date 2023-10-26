@@ -2,7 +2,7 @@
   <div class="hero-section row">
     <div class="hero-container">
       <div class="hero-header">
-        <h1 class="title-section text-center">{{ headerText }}</h1>
+        <h1 class="title-section text-center mb-2">{{ headerText }}</h1>
 
         <div class="bio-text text-center">
           <p>{{ bioText }}</p>
@@ -48,10 +48,10 @@
 
   <div class="work-section text-center">
     <div class="greeting-section">
-      <h2 class="greeting-title">
+      <h1 class="greeting-title">
         <span class="hand material-icons-outlined"> waving_hand </span
         >{{ greetingText }}
-      </h2>
+      </h1>
       <p class="greeting-text">
         I'm an experienced UX professional with a diverse background spanning
         Healthcare, Finance, Retail, and more. Known for my collaborative
@@ -63,7 +63,7 @@
     </div>
 
     <div class="recent-work-title mb-3">
-      <h4 class="project-title">Recent Work Experience:</h4>
+      <h2 class="project-title">Recent Work Experience:</h2>
     </div>
     <div class="project-section">
       <mat-accordion>
@@ -78,20 +78,28 @@
             src="assets/cvs.png"
             alt="Responsive image"
           />
-          <p class="accordion-text">
-            Kiosk PreCheck-in Experience, Revolutionizing Patient Check-Ins:
-            Explore how, as CVS Health's UX Lead, I harnessed Android tablets
-            and QR codes to transform the kiosk pre-check-in experience,
-            prioritizing patient satisfaction and streamlined healthcare
-            processes. <a href="/cvs">Read more ...</a>
-          </p>
-          <p class="accordion-text">
-            Journey Map Workshop Template Design, Revolutionizing Healthcare
-            Management: Learn how I spearheaded the creation of a game-changing
-            Journey Map Workshop Template at CVS Health, optimizing executive
-            strategy sessions and capturing invaluable care management insights.
-            <a href="/cvs">Read more ...</a>
-          </p>
+          <div class="accordion-text-area p-5">
+            <p class="accordion-text">
+              <strong
+                >Kiosk PreCheck-in Experience, Revolutionizing Patient
+                Check-Ins:</strong
+              >
+              Explore how, as CVS Health's UX Lead, I harnessed Android tablets
+              and QR codes to transform the kiosk pre-check-in experience,
+              prioritizing patient satisfaction and streamlined healthcare
+              processes. <a href="/cvs">More ...</a><br /><br />
+            </p>
+            <p class="accordion-text">
+              <strong
+                >Journey Map Workshop Template Design, Revolutionizing
+                Healthcare Management:</strong
+              >
+              Learn how I spearheaded the creation of a game-changing Journey
+              Map Workshop Template at CVS Health, optimizing executive strategy
+              sessions and capturing invaluable care management insights.
+              <a href="/cvs">More ...</a>
+            </p>
+          </div>
         </mat-expansion-panel>
 
         <!-- Expansion Panel #2 -->
@@ -99,69 +107,110 @@
           <mat-expansion-panel-header>
             <p class="accordion-title">Aetna</p>
           </mat-expansion-panel-header>
-          <p class="accordion-text">
-            Google Search Maps Integration at Plan Level, Unlocking Healthcare
-            Access: See how I, as the UX Lead at Aetna Behavioral Health, am
-            driving an innovative map-centric web prototype that simplifies
-            finding top healthcare providers. Through seamless Google Search API
-            integration and unique pin icons, we prioritize user-centric
-            excellence.
-            <a href="/aetna">Read more ...</a>
-          </p>
-          <p class="accordion-text">
-            Rewards Center Improvement for Web, Revolutionizing Rewards:
-            Discover how we at Aetna Behavioral Health embarked on an initiative
-            to enhance our rewards program. By integrating unique fitness
-            merchandise and highlighting a key brand, we introduced novel
-            features like a dynamic merchandise tile and innovative checkout
-            entry.
-            <a href="/aetna">Read more ...</a>
-          </p>
+          <img
+            class="img-fluid mb-3"
+            id="tech-image"
+            src="assets/aetna.png"
+            alt="Responsive image"
+          />
+          <div class="accordion-text-area p-5">
+            <p class="accordion-text">
+              <strong
+                >Google Search Maps Integration at Plan Level, Unlocking
+                Healthcare Access:</strong
+              >
+              See how I, as the UX Lead at Aetna Behavioral Health, am driving
+              an innovative map-centric web prototype that simplifies finding
+              top healthcare providers. Through seamless Google Search API
+              integration and unique pin icons, we prioritize user-centric
+              excellence.
+              <a href="/aetna">More ...</a><br /><br />
+            </p>
+            <p class="accordion-text">
+              <strong
+                >Rewards Center Improvement for Web, Revolutionizing
+                Rewards:</strong
+              >
+              Discover how we at Aetna Behavioral Health embarked on an
+              initiative to enhance our rewards program. By integrating unique
+              fitness merchandise and highlighting a key brand, we introduced
+              novel features like a dynamic merchandise tile and innovative
+              checkout entry.
+              <a href="/aetna">Read more ...</a>
+            </p>
+          </div>
         </mat-expansion-panel>
         <!-- Expansion Panel #3 -->
         <mat-expansion-panel>
           <mat-expansion-panel-header>
             <p class="accordion-title">Bank of America</p>
           </mat-expansion-panel-header>
-          <p class="accordion-text">
-            BankAmeriDeals Seamless User Experience, Revolutionizing
-            BankAmeriDeals at Bank of America: See how we merged responsive
-            design with gamification for unmatched adaptability. Dive into a
-            project that, though not fully produced, paved the way for our
-            future innovations.
-            <a href="/bofa">Read more ...</a>
-          </p>
-          <p class="accordion-text">
-            Bank of America Next-Gen Workforce Portal, Elevating Bank of
-            America's recruitment game: Discover how I transformed our internal
-            hiring experience with a bespoke Workforce Management Portal.
-            <a href="/bofa">Read more ...</a>
-          </p>
-          <p class="accordion-text">
-            Bank of America Advantage Banking, Explore the next-gen user
-            experience with Bank of America's Advantage Banking: See how we
-            bridged innovation and functionality to serve diverse banking needs
-            on every platform.
-            <a href="/bofa">Read more ...</a>
-          </p>
+          <img
+            class="img-fluid mb-3"
+            id="tech-image"
+            src="assets/bofa.png"
+            alt="Responsive image"
+          />
+          <div class="accordion-text-area p-5">
+            <p class="accordion-text">
+              <strong
+                >BankAmeriDeals Seamless User Experience, Revolutionizing
+                BankAmeriDeals at Bank of America:</strong
+              >
+              See how we merged responsive design with gamification for
+              unmatched adaptability. Dive into a project that, though not fully
+              produced, paved the way for our future innovations.
+              <a href="/bofa">More ...</a><br /><br />
+            </p>
+            <p class="accordion-text">
+              <strong
+                >Bank of America Next-Gen Workforce Portal, Elevating Bank of
+                America's recruitment game:</strong
+              >
+              Discover how I transformed our internal hiring experience with a
+              bespoke Workforce Management Portal.
+              <a href="/bofa">More ...</a><br /><br />
+            </p>
+            <p class="accordion-text">
+              <strong
+                >Bank of America Advantage Banking, Explore the next-gen user
+                experience with Bank of America's Advantage Banking:</strong
+              >
+              See how we bridged innovation and functionality to serve diverse
+              banking needs on every platform.
+              <a href="/bofa">More ...</a>
+            </p>
+          </div>
         </mat-expansion-panel>
         <!-- Expansion Panel #4 -->
         <mat-expansion-panel>
           <mat-expansion-panel-header>
             <p class="accordion-title">Fidelity</p>
           </mat-expansion-panel-header>
-          <p class="accordion-text">
-            Fidelity Wealth Central, Unlocking the Potential of Wealth Central:
-            Delve into the management of an innovative brokerage technology
-            platform for Registered Advisors.
-            <a href="/fidelity">Read more ...</a>
-          </p>
-          <p class="accordion-text">
-            Fidelity Wealth Central, Web Responsive Refresh: Dive into the
-            evolution of Wealth Central, exploring the refreshed and responsive
-            design tailored for Fidelity's Financial Advisor applications.
-            <a href="/fidelity">Read more ...</a>
-          </p>
+          <img
+            class="img-fluid mb-3"
+            id="tech-image"
+            src="assets/fidelity.png"
+            alt="Responsive image"
+          />
+          <div class="accordion-text-area p-3">
+            <p class="accordion-text">
+              <strong
+                >Fidelity Wealth Central, Unlocking the Potential of Wealth
+                Central:</strong
+              >
+              Delve into the management of an innovative brokerage technology
+              platform for Registered Advisors.
+              <a href="/fidelity">More ...</a><br /><br />
+            </p>
+            <p class="accordion-text">
+              <strong>Fidelity Wealth Central, Web Responsive Refresh:</strong> Dive into the
+              evolution of Wealth Central, exploring the refreshed and
+              responsive design tailored for Fidelity's Financial Advisor
+              applications.
+              <a href="/fidelity">More ...</a>
+            </p>
+          </div>
         </mat-expansion-panel>
         <!-- Expansion Panel #5 -->
         <mat-expansion-panel>
