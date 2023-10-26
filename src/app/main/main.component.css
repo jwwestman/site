@@ -29,8 +29,7 @@ html {
 .mobile-hero-header {
   display: none;
 }
-.mobile-contact-section,
-.small-hero-header {
+.mobile-contact-section {
   display: none;
 }
 #avatar {
@@ -64,6 +63,12 @@ html {
 .greeting-text {
   font-family: "Roboto Mono", monospace;
 }
+.project-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .project-title {
   font-family: "Roboto Mono", monospace;
   text-align: left;
@@ -78,7 +83,7 @@ html {
   align-items: center;
   background-color: #747d8c;
   padding-bottom: 60px;
-  width: 100vw;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -96,16 +101,12 @@ mat-expansion-panel {
   background-color: white;
   width: 900px;
 }
-/* For the header */
 mat-expansion-panel-header {
   font-family: "Roboto Mono", monospace;
 }
-
-/* For the accordion text */
 .accordion-text {
   font-family: "Roboto Mono", monospace;
 }
-
 .title {
   margin-top: 80px;
 }
@@ -132,7 +133,13 @@ mat-expansion-panel-header {
     margin: 0 auto;
   }
 }
-
+@media (max-width: 800px) {
+  .mobile-contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
 @media (max-width: 912px) {
   .hero-section {
     background-color: white;
@@ -162,19 +169,6 @@ mat-expansion-panel-header {
   }
   .image-section {
     display: none;
-  }
-
-  .mobile-contact-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .mobile-contact-section #connect-button {
-    display: inline-block;
-    width: auto;
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .img-fluid {
@@ -214,15 +208,6 @@ mat-expansion-panel-header {
   }
 }
 @media (max-width: 470px) {
-  .hero-header {
-    display: none;
-  }
-  .mobile-hero-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   mat-expansion-panel {
     background-color: white;
     width: 90vw;
@@ -243,9 +228,7 @@ mat-expansion-panel-header {
     width: 90vw;
     margin: 0 auto;
   }
-  .mobile-hero-header {
-    display: none;
-  }
+
   .greeting-section {
     font-size: 0.9rem;
     padding: 10px;
@@ -255,10 +238,5 @@ mat-expansion-panel-header {
     margin-top: 20px;
     text-align: center;
     padding: 0px;
-  }
-  .small-hero-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
   }
 }
