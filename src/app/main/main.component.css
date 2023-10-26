@@ -229,7 +229,7 @@ mat-expansion-panel-header {
     margin: 0 auto;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   .hero-section {
     height: 50vh;
     padding: 5px;
@@ -245,6 +245,16 @@ mat-expansion-panel-header {
   }
   .mobile-hero-header {
     display: none;
+  }
+  .greeting-section {
+    font-size: 0.9rem;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .greeting-text {
+    margin-top: 20px;
+    text-align: center;
+    padding: 0px;
   }
   .small-hero-header {
     display: flex;
