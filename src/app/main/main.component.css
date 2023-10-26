@@ -6,7 +6,8 @@ html {
 }
 .container-fluid {
   background-color: white;
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 .hero-section {
   background-color: white;
@@ -39,7 +40,7 @@ html {
 }
 .hand {
   font-size: 32px;
-  margin-right: 10px;
+  margin-right: 15px;
 }
 .title-section,
 .bio-text {
@@ -72,6 +73,10 @@ html {
 .project-title {
   font-family: "Roboto Mono", monospace;
   text-align: left;
+}
+.work-section {
+  margin-left: 0;
+  margin-right: 0;
 }
 .recent-work-title {
   color: white;
@@ -116,10 +121,6 @@ mat-expansion-panel-header {
   font-size: 24px;
 }
 
-.footer {
-  height: 100px;
-  background-color: black;
-}
 @media (max-width: 1000px) {
   .work-section {
     background-color: #747d8c;
@@ -165,7 +166,7 @@ mat-expansion-panel-header {
   }
   .work-section {
     background-color: #747d8c;
-    width: 100vw;
+    width: 100%;
   }
   .image-section {
     display: none;

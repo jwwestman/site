@@ -1,0 +1,10 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: black;
+    font-family: "Roboto Mono", monospace;
+    color: white;
+  }
