@@ -6,7 +6,8 @@ html {
 }
 .container-fluid {
   background-color: white;
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 .hero-section {
   background-color: white;
@@ -29,14 +30,21 @@ html {
 .mobile-hero-header {
   display: none;
 }
-.mobile-contact-section,
-.small-hero-header {
+.mobile-contact-section {
   display: none;
 }
 #avatar {
   margin-top: 20px;
   width: 100%;
   max-width: 200px;
+}
+.hand {
+  font-size: 32px;
+  margin-right: 15px;
+}
+.title-section,
+.bio-text {
+  font-family: "Roboto Mono", monospace;
 }
 #tech-image {
   width: 800px;
@@ -50,10 +58,25 @@ html {
   margin-right: auto;
 }
 .greeting-title {
+  font-family: "Roboto Mono", monospace;
   margin-top: 80px;
 }
+.greeting-text {
+  font-family: "Roboto Mono", monospace;
+}
+.project-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .project-title {
+  font-family: "Roboto Mono", monospace;
   text-align: left;
+}
+.work-section {
+  margin-left: 0;
+  margin-right: 0;
 }
 .recent-work-title {
   color: white;
@@ -65,16 +88,30 @@ html {
   align-items: center;
   background-color: #747d8c;
   padding-bottom: 60px;
-  width: 100vw;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
+}
+mat-expansion-panel-header {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+}
+
+.accordion-title {
+  margin: 0;
 }
 
 mat-expansion-panel {
   background-color: white;
   width: 900px;
 }
-
+mat-expansion-panel-header {
+  font-family: "Roboto Mono", monospace;
+}
+.accordion-text {
+  font-family: "Roboto Mono", monospace;
+}
 .title {
   margin-top: 80px;
 }
@@ -84,10 +121,6 @@ mat-expansion-panel {
   font-size: 24px;
 }
 
-.footer {
-  height: 100px;
-  background-color: black;
-}
 @media (max-width: 1000px) {
   .work-section {
     background-color: #747d8c;
@@ -101,8 +134,14 @@ mat-expansion-panel {
     margin: 0 auto;
   }
 }
-
 @media (max-width: 800px) {
+  .mobile-contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 912px) {
   .hero-section {
     background-color: white;
     max-width: 100vw;
@@ -116,7 +155,6 @@ mat-expansion-panel {
   .hero-header {
     display: flex;
     flex-direction: column;
-    align-items: center;
     margin-bottom: 5px;
   }
   .hero-container {
@@ -124,27 +162,14 @@ mat-expansion-panel {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 55vh;
+    height: 40vh;
   }
   .work-section {
     background-color: #747d8c;
-    width: 100vw;
+    width: 100%;
   }
   .image-section {
     display: none;
-  }
-
-  .mobile-contact-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .mobile-contact-section #connect-button {
-    display: inline-block;
-    width: auto;
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .img-fluid {
@@ -159,6 +184,9 @@ mat-expansion-panel {
     background-color: white;
     width: 90vw;
     margin: 0 auto;
+  }
+  .greeting-title {
+    margin-top: 20px;
   }
   .greeting-text {
     margin-top: 15px;
@@ -181,22 +209,13 @@ mat-expansion-panel {
   }
 }
 @media (max-width: 470px) {
-  .hero-header {
-    display: none;
-  }
-  .mobile-hero-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
   mat-expansion-panel {
     background-color: white;
     width: 90vw;
     margin: 0 auto;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 425px) {
   .hero-section {
     height: 50vh;
     padding: 5px;
@@ -210,12 +229,15 @@ mat-expansion-panel {
     width: 90vw;
     margin: 0 auto;
   }
-  .mobile-hero-header {
-    display: none;
+
+  .greeting-section {
+    font-size: 0.9rem;
+    padding: 10px;
+    margin-bottom: 10px;
   }
-  .small-hero-header {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  .greeting-text {
+    margin-top: 20px;
+    text-align: center;
+    padding: 0px;
   }
 }

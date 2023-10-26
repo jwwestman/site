@@ -1,5 +1,4 @@
 import { Component, OnInit, HostListener } from '@angular/core';
-import { trigger, transition, style, animate } from '@angular/animations';
 import { SharedService } from '../shared.service';
 import { Router } from '@angular/router';
 import { Modal } from 'bootstrap';
@@ -8,39 +7,17 @@ import { Modal } from 'bootstrap';
   selector: 'app-main',
   templateUrl: './main.component.html',
   styleUrls: ['./main.component.css'],
-  animations: [
-    trigger('fadeOut', [
-      transition(':leave', [animate('1s', style({ opacity: 0 }))]),
-    ]),
-  ],
 })
 export class MainComponent implements OnInit {
-  isMobile = false;
-  staticTitle = 'Julie Westman';
-
-  @HostListener('window:resize')
-  onResize() {
-    this.isMobile = window.innerWidth <= 500;
-  }
-
-  dynamicTitles = [
-    'Senior UX Professional',
-    'Digital Strategist 💻',
-    'Product Owner 📈',
-    'Fashionista 👜',
-    'Doodle Owner 🐶',
-  ];
-  currentTitleIndex = 0;
-  showTitle = true;
-
-  private interval: any;
-
   constructor(private router: Router, private sharedService: SharedService) {}
 
-  ngOnInit() {
-    this.onResize();
-    this.startAnimation();
+  headerText: string = 'Julie Westman, UX Professional';
+  bioText: string =
+    'I design and code beautifully simple things, and I love what I do.';
+  greetingText: string = 'Hi, I’m Julie. Nice to meet you.';
 
+  ngOnInit(): void {
+    this.onResize();
     this.sharedService.showModal$.subscribe(() => {
       const modalElement = document.getElementById('connectModal');
       if (modalElement) {
@@ -51,29 +28,28 @@ export class MainComponent implements OnInit {
       }
     });
   }
+
   onButtonClick() {
     this.sharedService.triggerModal();
   }
-  startAnimation() {
-    this.interval = setInterval(() => {
-      this.showTitle = false;
 
-      setTimeout(() => {
-        this.currentTitleIndex++;
+  @HostListener('window:resize', ['$event'])
+  onResize(event?: Event) {
+    const width = window.innerWidth;
 
-        if (this.currentTitleIndex === this.dynamicTitles.length) {
-          clearInterval(this.interval); // Stop the loop when all titles have been shown.
-          this.currentTitleIndex = 0; // Reset to the first title.
-        }
-
-        this.showTitle = true;
-      }, 1000); // 1s for the fade out transition
-    }, 2000); // Change title every 2 seconds (1 second visible + 1 second for the fade-out transition)
-  }
-
-  onAnimationEvent(event: any): void {
-    if (event.toState === 'void' && this.currentTitleIndex === 0) {
-      clearInterval(this.interval);
+    if (width <= 700) {
+      this.headerText = 'Julie Westman';
+      this.bioText = 'I design beautifully simple things.';
+      
+      if (width <= 630) {
+        this.greetingText = 'Hi, I’m Julie.';
+      } else {
+        this.greetingText = 'Hi, I’m Julie. Nice to meet you.';
+      }
+    } else {
+      this.headerText = 'Julie Westman, UX Professional';
+      this.bioText = 'I design and code beautifully simple things, and I love what I do.';
+      this.greetingText = 'Hi, I’m Julie. Nice to meet you.';
     }
   }
 }
