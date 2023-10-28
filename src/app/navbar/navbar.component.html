@@ -14,8 +14,11 @@
       class="btn btn-outline-primary"
       id="connect-button"
       role="button"
-      >Say Hello</a
+      *ngIf="!isEmailPage"
     >
+      Say Hello</a
+    >
+
     <mat-icon class="menu-icon" *ngIf="!isModalOpen" (click)="toggleModal()"
       >menu</mat-icon
     >
