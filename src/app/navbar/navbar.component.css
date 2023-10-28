@@ -15,6 +15,7 @@
   margin-right: 20px;
 }
 .right-section {
+  font-family: "Roboto Mono", monospace;
   display: flex;
   flex-direction: row;
   align-items: center;

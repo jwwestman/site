@@ -75,3 +75,9 @@ body {
 .recent-work {
   margin-bottom: 20px;
 }
+.accordion-text {
+  text-align: left;
+}
+mat-expansion-panel-header {
+  text-align: center;
+}

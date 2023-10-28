@@ -1,42 +1,42 @@
 .container-fluid {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 80vh;
-  width: 100%; 
+  width: 100%;
 }
 .form-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background-color: #ecf0f1;
+  padding: 20px;
+  width: 100%;
+  max-width: 500px;
+  align-items: stretch;
   justify-content: center;
-  background-color: white;
-  height: 10vh;
-  width: 90%;
-  max-width: 600px;
+  height: 40vh;
+  margin: 0 auto;
 }
-.bi {
-  font-size: 128px;
+.form-container .form-control {
+  width: 100%;
 }
-p {
-  font-size: 4rem;
+#avatar {
+  margin-top: 0;
+  width: 100%;
+  max-width: 150px;
 }
-@media (max-width: 768px) {
-  .bi {
-    font-size: 96px;
-  }
-
-  p {
-    font-size: 3rem;
-  }
+.avatar-section {
+  position: relative;
+  z-index: 2;
+  top: -40px;
+  padding: 0 10px;
 }
-@media (max-width: 480px) {
-  .bi {
-    font-size: 64px;
-  }
-
-  p {
-    font-size: 2rem;
-  }
+.message-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
 }

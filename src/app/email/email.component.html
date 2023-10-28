@@ -1,6 +1,45 @@
-<main class="container-fluid">
-  <div class="form-container">
-    <i class="bi bi-envelope"></i>
-    <p>EMAIL FORM</p>
+<div class="container-fluid">
+  <figure class="avatar-section">
+    <img
+      class="img-fluid"
+      id="avatar"
+      src="assets/avatar.png"
+      alt="Portrait of Julie"
+    />
+  </figure>
+  <div class="form-section">
+    <div class="form-headline mb-5">
+      <h1>I look forward to connecting!</h1>
+    </div>
+    <div class="form-container">
+      <form [formGroup]="FormData" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+          <label for="userEmail" class="form-label">Your email</label>
+          <input
+            formControlName="Email"
+            type="email"
+            class="form-control"
+            id="userEmail"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="userMessage" class="form-label">Message</label>
+          <textarea
+            formControlName="Comment"
+            class="form-control"
+            id="userMessage"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+        <div class="d-flex justify-content-center">
+          <button type="submit" class="btn btn-dark">Send</button>
+        </div>
+      </form>
+      <div class="message-section">
+        <p *ngIf="responseMessage">{{ responseMessage }}</p>
+      </div>
+    </div>
   </div>
-</main>
+</div>
