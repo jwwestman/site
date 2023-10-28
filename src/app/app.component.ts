@@ -7,8 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   showModal = false;
+  isResumePage = false;
+  isEmailPage = false;
 
-  handleToggle() {
-    this.showModal = !this.showModal;
+  handleToggle(event: { show: boolean, isResume: boolean, isEmail: boolean }) {
+    this.showModal = event.show;
+    this.isResumePage = event.isResume;
+    this.isEmailPage = event.isEmail;
   }
 }

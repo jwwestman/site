@@ -8,7 +8,8 @@
     <a href="https://www.linkedin.com/in/juliewestman/" class="text-link"
       >LinkedIn</a
     >
-    <a href="/resume" class="text-link">Resume</a>
+    <a href="/resume" class="text-link" *ngIf="!isResumePage">Resume</a>
+
     <a
       routerLink="/email"
       class="btn btn-outline-primary"

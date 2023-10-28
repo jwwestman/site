@@ -2,8 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  height: 65vh;
+  justify-content: flex-start;
+  height: 100vh;
   width: 100%;
 }
 .form-container {
@@ -13,11 +13,15 @@
   justify-content: center;
   background-color: white;
   width: 90%;
-  max-width: 600px;
+  max-width: 1000px;
 }
-
 p {
   font-size: 4rem;
+}
+@media (max-width: 1000px) {
+  embed {
+    width: 100%;
+  }
 }
 @media (max-width: 768px) {
   p {

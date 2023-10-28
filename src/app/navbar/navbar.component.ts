@@ -8,16 +8,19 @@ import { Router, NavigationEnd } from '@angular/router';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent {
-  @Output() toggle = new EventEmitter<void>();
+  @Output() toggle = new EventEmitter<{ show: boolean, isResume: boolean, isEmail: boolean }>();
 
   isEmailPage: boolean = false;
 
   isModalOpen = false;
 
+  isResumePage: boolean = false;
+
   constructor(private route: ActivatedRoute, private router: Router) {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         this.isEmailPage = event.urlAfterRedirects.includes('/email');
+        this.isResumePage = event.urlAfterRedirects.includes('/resume');
       }
     });
   }
@@ -30,6 +33,6 @@ export class NavbarComponent {
 
   toggleModal() {
     this.isModalOpen = !this.isModalOpen;
-    this.toggle.emit();
+    this.toggle.emit({ show: this.isModalOpen, isResume: this.isResumePage, isEmail: this.isEmailPage });
   }
 }
