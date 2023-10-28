@@ -1,0 +1,22 @@
+.navbar {
+  height: 80px;
+}
+.navbar-brand {
+  margin-left: 15px;
+}
+.navbar-brand > img {
+  height: 42px;
+}
+#connect-button {
+  margin-right: 20px;
+}
+.right-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.menu-icon-container {
+  display: none;
+  font-size: 36px;
+  margin-right: 25px;
+}
