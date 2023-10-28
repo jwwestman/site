@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: center;
   background-color: white;
-  width: 90%;
+  width: 100%;
   max-width: 1000px;
 }
 
@@ -26,13 +26,12 @@ embed {
   @media (max-width: 1000px) {
     embed {
       width: 100%;
-      max-width: none; /* Allow the embed to stretch beyond any limits */
     }
   }
   
   @media (max-width: 768px) {
-    p {
-      font-size: 3rem;
+    embed {
+      width: 100vw;
     }
   }
   
