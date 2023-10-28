@@ -15,21 +15,32 @@
   width: 90%;
   max-width: 1000px;
 }
-p {
-  font-size: 4rem;
-}
-@media (max-width: 1000px) {
-  embed {
-    width: 100%;
+
+embed {
+    border: none; /* Remove any borders */
+    margin: 0; /* Ensure no margins */
+    padding: 0; /* Ensure no padding */
+    width: 100%; /* Default width */
   }
-}
-@media (max-width: 768px) {
-  p {
-    font-size: 3rem;
+  
+  @media (max-width: 1000px) {
+    embed {
+      width: 100%;
+      max-width: none; /* Allow the embed to stretch beyond any limits */
+    }
   }
-}
-@media (max-width: 480px) {
-  p {
-    font-size: 2rem;
+  
+  @media (max-width: 768px) {
+    p {
+      font-size: 3rem;
+    }
   }
-}
+  
+  @media (max-width: 480px) {
+    p {
+      font-size: 2rem;
+    }
+    embed {
+      width: 100%; /* Make sure the embed stretches fully */
+    }
+  }
