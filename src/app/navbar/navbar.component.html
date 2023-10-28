@@ -5,11 +5,24 @@
     </a>
   </div>
   <div class="right-section">
-    <a href="/email" class="btn btn-outline-primary" id="connect-button" role="button"
-      >Let's Connect</a
+    <a
+      href="https://www.linkedin.com/in/juliewestman/"
+      class="text-link"
+      >LinkedIn</a
     >
-    <div class="menu-icon-container">
-      <mat-icon class="menu-icon">menu</mat-icon>
-    </div>
+    <a href="/resume" class="text-link">Resume</a>
+    <a
+      href="/email"
+      class="btn btn-outline-primary"
+      id="connect-button"
+      role="button"
+      >Say Hello</a
+    >
+    <mat-icon class="menu-icon" *ngIf="!isModalOpen" (click)="toggleModal()"
+      >menu</mat-icon
+    >
+    <mat-icon class="menu-icon" *ngIf="isModalOpen" (click)="toggleModal()"
+      >close</mat-icon
+    >
   </div>
 </div>

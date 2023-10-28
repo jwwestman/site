@@ -1,5 +1,9 @@
 .navbar {
-  height: 80px;
+  max-width: 1400px;
+  width: 100%;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .navbar-brand {
   margin-left: 15px;
@@ -18,5 +22,54 @@
 .menu-icon-container {
   display: none;
   font-size: 36px;
-  margin-right: 25px;
+  margin-right: 15px;
+}
+.text-link {
+  margin-right: 20px;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
+
+  &:hover,
+  &:focus {
+    color: #007bff;
+  }
+}
+.menu-icon {
+  display: none;
+  font-size: 36px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  margin-right: 40px;
+}
+.modal {
+  position: relative;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+}
+.modal-content {
+  max-width: 100vw;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+}
+@media screen and (max-width: 1023px) {
+  .right-section .text-link,
+  #connect-button {
+    display: none;
+  }
+  .menu-icon {
+    display: block;
+  }
+  .modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 }
