@@ -9,9 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: ng build && Firebase deploy
+      - run: ng build && firebase deploy
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_WESTMAN_F3D9C }}'
-          projectId: westman-f3d9c
+          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_SITE_42F73 }}'
+          projectId: site-42f73
