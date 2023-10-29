@@ -11,35 +11,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: white;
   width: 100%;
   max-width: 1000px;
 }
 
 embed {
-    border: none; /* Remove any borders */
-    margin: 0; /* Ensure no margins */
-    padding: 0; /* Ensure no padding */
-    width: 100%; /* Default width */
+  border: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+@media (max-width: 1000px) {
+  embed {
+    width: 100%;
   }
-  
-  @media (max-width: 1000px) {
-    embed {
-      width: 100%;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    embed {
-      width: 100vw;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    p {
-      font-size: 2rem;
-    }
-    embed {
-      width: 100%; /* Make sure the embed stretches fully */
-    }
-  }
+}
