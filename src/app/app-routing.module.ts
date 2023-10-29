@@ -4,6 +4,9 @@ import { MainComponent } from './main/main.component';
 import { EmailComponent } from './email/email.component';
 import { ResumeComponent } from './resume/resume.component';
 import { HealthComponent } from './health/health.component';
+import { InsuranceComponent } from './insurance/insurance.component';
+import { BankComponent } from './bank/bank.component';
+import { RetailComponent } from './retail/retail.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/main', pathMatch: 'full' },
@@ -11,6 +14,9 @@ const routes: Routes = [
   { path: 'email', component: EmailComponent },
   { path: 'resume', component: ResumeComponent },
   { path: 'health', component: HealthComponent },
+  { path: 'insurance', component: InsuranceComponent },
+  { path: 'bank', component: BankComponent },
+  { path: 'retail', component: RetailComponent },
 ];
 
 @NgModule({

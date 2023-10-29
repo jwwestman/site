@@ -16,6 +16,9 @@ import { EmailComponent } from './email/email.component';
 import { FooterComponent } from './footer/footer.component';
 import { ResumeComponent } from './resume/resume.component';
 import { HealthComponent } from './health/health.component';
+import { InsuranceComponent } from './insurance/insurance.component';
+import { BankComponent } from './bank/bank.component';
+import { RetailComponent } from './retail/retail.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +29,9 @@ import { HealthComponent } from './health/health.component';
     FooterComponent,
     ResumeComponent,
     HealthComponent,
+    InsuranceComponent,
+    BankComponent,
+    RetailComponent,
   ],
   imports: [
     BrowserModule,
