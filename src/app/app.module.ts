@@ -15,6 +15,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { EmailComponent } from './email/email.component';
 import { FooterComponent } from './footer/footer.component';
 import { ResumeComponent } from './resume/resume.component';
+import { HealthComponent } from './health/health.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { ResumeComponent } from './resume/resume.component';
     EmailComponent,
     FooterComponent,
     ResumeComponent,
+    HealthComponent,
   ],
   imports: [
     BrowserModule,
