@@ -21,9 +21,26 @@ embed {
   padding: 0;
   display: block;
 }
-
+@media (min-width: 1001px) {
+  .small-screen {
+    display: none;
+  }
+  .large-screen {
+    display: block;
+  }
+}
 @media (max-width: 1000px) {
-  embed {
+  .small-screen {
+    display: block;
     width: 100%;
+  }
+  .large-screen {
+    display: none;
+  }
+  .container-fluid {
+    height: auto;
+    min-height: 100vh;
+    margin-bottom: 30px;
+    padding: 0px;
   }
 }
