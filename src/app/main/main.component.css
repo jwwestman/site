@@ -53,6 +53,9 @@ h2 {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
 }
+.sub-title-mobile {
+  display: none;
+}
 #avatar {
   margin-top: 60px;
   margin-bottom: 60px;
@@ -93,6 +96,7 @@ h2 {
 
 .design-container {
   max-width: 1100px;
+  height: auto;
   margin-left: auto;
   margin-right: auto;
   margin-top: -100px;
@@ -121,30 +125,11 @@ h2 {
   gap: 20px;
 }
 
-.top,
-.middle,
-.bottom {
-  display: flex;
-  flex-direction: column;
-}
-.top,
-.middle {
-  margin-bottom: 20px;
-}
-.bottom {
-  flex-grow: 0; /* Do not allow the bottom to grow */
-}
 .skill-title,
 .skill-subtitle {
   flex: 0;
   flex-grow: 0;
 }
-.top,
-.middle {
-  height: 15%;
-  margin-bottom: 40px;
-}
-
 .column {
   flex: 1 1 calc(33.333% - 40px);
   display: flex;
@@ -156,6 +141,22 @@ h2 {
 }
 .column:not(:last-child) {
   border-right: 1px solid #ccc;
+}
+.column .top,
+.column .middle,
+.column .bottom {
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.column .top {
+  margin-bottom: 20px;
+}
+.column .bottom {
+  margin-top: -40px;
 }
 
 .vertical-text {
@@ -186,19 +187,20 @@ h2 {
   filter: brightness(0.8);
 }
 .logo-section {
-  margin-top: 10px; 
-  margin-bottom: 100px; 
-  display: flex; 
-  justify-content: center; 
-  align-items: center; 
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: auto;
   padding: 100px 0;
 }
-
+.logo-section-mobile {
+  display: none;
+}
 #company-logo {
-  max-width: 100%; 
+  max-width: 100%;
   height: auto;
-  display: block; 
+  display: block;
 }
 @media (max-width: 768px) {
   .design-container {
@@ -219,5 +221,40 @@ h2 {
   .vertical-text {
     text-align: center;
     margin: 10px 0;
+  }
+}
+@media (max-width: 500px) {
+  .logo-section,
+  .sub-title {
+    display: none;
+  }
+  .sub-title-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.1rem;
+    padding-top: 5px;
+  }
+  .title-section {
+    font-size: 2.5rem;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .avatar-section {
+    margin-top: -20px;
+  }
+  .greeting-title {
+    font-size: 2.3rem;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .logo-section-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
   }
 }

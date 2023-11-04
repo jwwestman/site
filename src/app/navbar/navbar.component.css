@@ -81,3 +81,11 @@ body {
     justify-content: center;
   }
 }
+@media (max-width: 500px) {
+  .navbar-brand > img {
+    height: 55px;
+  }
+  .navbar-brand {
+    margin-left: 25px;
+  }
+}
