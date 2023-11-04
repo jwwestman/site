@@ -1,13 +1,15 @@
 <app-navbar (toggle)="handleToggle($event)"></app-navbar>
 
 <div *ngIf="showModal" class="modal-content">
-  <a href="https://www.linkedin.com/in/juliewestman/" class="text-link">LinkedIn</a>
+  <a href="https://www.linkedin.com/in/juliewestman/" class="text-link"
+    >LinkedIn</a
+  >
   <a href="/resume" class="text-link" *ngIf="!isResumePage">Resume</a>
-  <a href="/email" class="btn btn-outline-primary" *ngIf="!isEmailPage">Say Hello</a>
+  <a href="/email" class="btn btn-outline-primary" *ngIf="!isEmailPage"
+    >Say Hello</a
+  >
 </div>
 
 <router-outlet></router-outlet>
 
 <app-footer></app-footer>
-
-
