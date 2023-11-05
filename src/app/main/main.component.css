@@ -211,6 +211,7 @@ h2 {
   }
   .column {
     flex-basis: auto;
+    margin-top: 5px;
   }
   .column:not(:last-child) {
     border-right: none;

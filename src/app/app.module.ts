@@ -18,6 +18,7 @@ import { ResumeComponent } from './resume/resume.component';
 import { RecentProjectsComponent } from './recent-projects/recent-projects.component';
 import { CvsProjectsComponent } from './cvs-projects/cvs-projects.component';
 import { AetnaProjectsComponent } from './aetna-projects/aetna-projects.component';
+import { BofaProjectsComponent } from './bofa-projects/bofa-projects.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { AetnaProjectsComponent } from './aetna-projects/aetna-projects.componen
     RecentProjectsComponent,
     CvsProjectsComponent,
     AetnaProjectsComponent,
+    BofaProjectsComponent,
   ],
   imports: [
     BrowserModule,

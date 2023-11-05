@@ -9,6 +9,7 @@ export class RecentProjectsComponent implements OnInit {
   employers = [
     { id: 'cvs', name: 'CVS Health' },
     { id: 'aetna', name: 'Aetna Insurance' },
+    { id: 'bofa', name: 'Bank of America' },
   ];
   selectedEmployerId: string | null = null;
 

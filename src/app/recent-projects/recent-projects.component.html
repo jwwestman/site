@@ -26,7 +26,8 @@
     </div>
     <ng-container [ngSwitch]="selectedEmployerId">
       <app-cvs-projects *ngSwitchCase="'cvs'"></app-cvs-projects>
-      <app-aetna-projects *ngSwitchCase="'aetna'"></app-aetna-projects>
+      <app-aetna-projects *ngSwitchCase="'aetna'"></app-aetna-projects>      
+      <app-bofa-projects *ngSwitchCase="'bofa'"></app-bofa-projects>
     </ng-container>
   </div>
 </main>
