@@ -33,3 +33,8 @@ p {
   padding: 0.5rem;
   margin-top: 30px;
 }
+@media (max-width: 620px) {
+  .recent-projects-sub-headline {
+    max-width: 80vw;
+  }
+}

@@ -44,6 +44,9 @@ p {
   width: 100vw;
   height: auto;
 }
+.project-title > h6 {
+  color: #ef1ed1;
+}
 .company-content {
   max-width: 800px;
   padding-top: 40px;
@@ -100,9 +103,9 @@ p {
     margin-left: auto;
     margin-right: auto;
   }
-  .header-container {
-    padding-left: 9px;
-    padding-right: 9px;
+  .header-container,
+  .role-container {
+    padding: 25px;
   }
   .disclaimer-text {
     padding: 24px;
