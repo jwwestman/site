@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h4 {
+  font-family: Lalezar, sans-serif;
+  font-size: 2.75rem;
+  color: #373461;
+}
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #373461;
+}
+.container-fluid {
+  background-color: white;
+}
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#recent-projects-hero {
+  width: 700px;
+  height: auto;
+  margin-bottom: 30px;
+}
+.custom-select {
+  width: 300px;
+  padding: 0.5rem;
+  margin-top: 30px;
+}

@@ -15,10 +15,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { EmailComponent } from './email/email.component';
 import { FooterComponent } from './footer/footer.component';
 import { ResumeComponent } from './resume/resume.component';
-import { HealthComponent } from './health/health.component';
-import { InsuranceComponent } from './insurance/insurance.component';
-import { BankComponent } from './bank/bank.component';
-import { RetailComponent } from './retail/retail.component';
+import { RecentProjectsComponent } from './recent-projects/recent-projects.component';
+import { CvsProjectsComponent } from './cvs-projects/cvs-projects.component';
+import { AetnaProjectsComponent } from './aetna-projects/aetna-projects.component';
 
 @NgModule({
   declarations: [
@@ -28,10 +27,9 @@ import { RetailComponent } from './retail/retail.component';
     EmailComponent,
     FooterComponent,
     ResumeComponent,
-    HealthComponent,
-    InsuranceComponent,
-    BankComponent,
-    RetailComponent,
+    RecentProjectsComponent,
+    CvsProjectsComponent,
+    AetnaProjectsComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,32 @@
+<main class="container-fluid">
+  <div class="hero-container">
+    <div class="hero-image">
+      <img
+        class="img-fluid"
+        id="recent-projects-hero"
+        src="assets/recent-projects-hero.png"
+        alt="Portrait of Julie"
+      />
+    </div>
+    <div class="recent-projects-headline"><h4>Recent Projects</h4></div>
+    <div class="recent-projects-sub-headline">
+      <p>
+        Interested in seeing more of my work? Feel free to reach out via email!
+      </p>
+    </div>
+    <div class="mb-3">
+      <select
+        class="form-select custom-select"
+        [(ngModel)]="selectedEmployerId"
+      >
+        <option *ngFor="let employer of employers" [ngValue]="employer.id">
+          {{ employer.name }}
+        </option>
+      </select>
+    </div>
+    <ng-container [ngSwitch]="selectedEmployerId">
+      <app-cvs-projects *ngSwitchCase="'cvs'"></app-cvs-projects>
+      <app-aetna-projects *ngSwitchCase="'aetna'"></app-aetna-projects>
+    </ng-container>
+  </div>
+</main>
