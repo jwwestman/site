@@ -21,7 +21,7 @@ p {
   font-family: "Open Sans", sans-serif;
   font-style: italic;
   font-size: 0.8rem;
-  color: red;
+  color: #373461;
 }
 .white-text {
   color: white;
@@ -76,6 +76,13 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
+#third-image {
+    max-width: 300px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 .role-container {
   display: flex;
   flex-direction: column;
