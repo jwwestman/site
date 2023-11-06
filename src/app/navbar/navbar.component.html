@@ -30,10 +30,16 @@
     >
       Say Hello</a
     >
-    <mat-icon class="menu-icon" *ngIf="!isModalOpen" (click)="toggleModal()"
+    <mat-icon
+      class="menu-icon"
+      *ngIf="!isModalOpen && !isEmailPage"
+      (click)="toggleModal()"
       >menu</mat-icon
     >
-    <mat-icon class="menu-icon" *ngIf="isModalOpen" (click)="toggleModal()"
+    <mat-icon
+      class="menu-icon"
+      *ngIf="isModalOpen && !isEmailPage"
+      (click)="toggleModal()"
       >close</mat-icon
     >
   </div>

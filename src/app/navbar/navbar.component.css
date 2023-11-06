@@ -94,4 +94,10 @@ body {
   .navbar-brand {
     margin-left: 25px;
   }
+  .right-section {
+    margin-right: 20px;
+  }
+  #undo-icon {
+    margin-right: 15px;
+  }
 }

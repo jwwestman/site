@@ -113,4 +113,8 @@ h1 {
     height: 80vh;
     margin-bottom: 40px;
   }
+  .form-label {
+    margin-left: 5px;
+    margin-bottom: 3px;
+  }
 }
