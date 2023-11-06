@@ -2,45 +2,36 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  height: 100vh;
+  justify-content: flex-start; /* Changed from flex-start to center to add space on top */
+  height: 80vh; /* This will make the container take the full viewport height */
   width: 100%;
-}
-.form-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  max-width: 1000px;
+  padding-bottom: 20px;
+  overflow: hidden; /* This will hide the scrollbar */
 }
 
-embed {
-  border: none;
-  margin: 0;
-  padding: 0;
-  display: block;
+.resume-container {
+  height: 80vh; /* 80% of the viewport height, adjust as needed */
+  max-width: 1000px;
+  width: 100%; /* take the full width of the container */
+  overflow-y: auto; /* enable vertical scrolling */
 }
-@media (min-width: 1001px) {
-  .small-screen {
-    display: none;
-  }
-  .large-screen {
-    display: block;
-  }
+
+.resume {
+  width: 80%; /* make sure the image is responsive and fits the width */
+  height: auto; /* maintain the aspect ratio of the image */
+  display: block; /* removes bottom space/margin */
+  margin-left: auto;
+  margin-right: auto;
 }
+
 @media (max-width: 1000px) {
-  .small-screen {
-    display: block;
-    width: 100%;
-  }
-  .large-screen {
-    display: none;
-  }
   .container-fluid {
     height: auto;
-    min-height: 100vh;
-    margin-bottom: 30px;
-    padding: 0px;
+  }
+  .resume-container {
+    height: auto;
+  }
+  .resume {
+    width: 90vw;
   }
 }
