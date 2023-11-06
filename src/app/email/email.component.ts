@@ -9,11 +9,12 @@ import {
 } from '@angular/forms';
 import { EmailService } from '../service/email.service';
 import { FormspreeResponse } from '../models/formspree';
+import { ClearFormService } from '../service/clear-form.service';
 
 @Component({
   selector: 'app-email',
   templateUrl: './email.component.html',
-  styleUrls: ['./email.component.css']
+  styleUrls: ['./email.component.css'],
 })
 export class EmailComponent implements OnInit {
   FormData!: FormGroup;
@@ -22,7 +23,11 @@ export class EmailComponent implements OnInit {
   responseMessage: string = '';
   isSubmitted = false;
 
-  constructor(private builder: FormBuilder, private contact: EmailService) {}
+  constructor(
+    private builder: FormBuilder,
+    private contact: EmailService,
+    private clearformService: ClearFormService
+  ) {}
 
   ngOnInit() {
     this.FormData = this.builder.group({
@@ -33,6 +38,9 @@ export class EmailComponent implements OnInit {
       ),
       Comment: new FormControl('', Validators.required),
     });
+    this.clearformService.clearFormObservable.subscribe(() => {
+      this.clearEmailForm();
+    });
   }
 
   onSubmit() {
@@ -40,7 +48,7 @@ export class EmailComponent implements OnInit {
       (response: FormspreeResponse) => {
         this.isSubmitted = true;
         if (response.ok) {
-          this.responseMessage = "Email sent successfully!";
+          this.responseMessage = 'Email sent successfully!';
         } else if (response.error) {
           this.responseMessage = response.error;
         }
@@ -50,5 +58,8 @@ export class EmailComponent implements OnInit {
       }
     );
   }
+  clearEmailForm() {
+    this.FormData.reset();
+    this.isSubmitted = false;
+  }
 }
-

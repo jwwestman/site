@@ -1,7 +1,10 @@
-<app-navbar (toggle)="handleToggle($event)"></app-navbar>
+<app-navbar (toggle)="handleToggle($event)" (clearForm)="handleClearForm()"></app-navbar>
 
 <div *ngIf="showModal" class="modal-content">
-  <a href="/recent-projects" class="text-link">Recent Projects</a>
+  <!-- Hide this link when isEmailPage is true -->
+<a href="/recent-projects" class="text-link" *ngIf="!isEmailPage">Recent Projects</a>
+
+  <!-- <a href="/recent-projects" class="text-link">Recent Projects</a> -->
   <a href="/email" class="btn btn-outline-primary" *ngIf="!isEmailPage"
     >Say Hello</a
   >

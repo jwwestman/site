@@ -5,7 +5,20 @@
     </a>
   </div>
   <div class="right-section">
-    <a href="/recent-projects" class="text-link"
+    <mat-icon
+      class="material-symbols-outlined large-icon"
+      id="undo-icon"
+      *ngIf="isEmailPage"
+      (click)="onClearForm()"
+      >undo</mat-icon
+    >
+    <mat-icon
+      class="close-icon large-icon"
+      *ngIf="isEmailPage"
+      (click)="onCloseEmail()"
+      >close</mat-icon
+    >
+    <a href="/recent-projects" class="text-link" *ngIf="!isEmailPage"
       >Recent Projects</a
     >
     <a

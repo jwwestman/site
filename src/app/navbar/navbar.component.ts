@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Output } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { ClearFormService } from '../service/clear-form.service';
 import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
@@ -8,7 +9,13 @@ import { Router, NavigationEnd } from '@angular/router';
   styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent {
-  @Output() toggle = new EventEmitter<{ show: boolean, isResume: boolean, isEmail: boolean }>();
+  @Output() toggle = new EventEmitter<{
+    show: boolean;
+    isResume: boolean;
+    isEmail: boolean;
+  }>();
+
+  @Output() clearForm = new EventEmitter<void>();
 
   isEmailPage: boolean = false;
 
@@ -16,7 +23,7 @@ export class NavbarComponent {
 
   isResumePage: boolean = false;
 
-  constructor(private route: ActivatedRoute, private router: Router) {
+  constructor(private route: ActivatedRoute, private router: Router, private clearformService: ClearFormService) {
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
         this.isEmailPage = event.urlAfterRedirects.includes('/email');
@@ -33,6 +40,16 @@ export class NavbarComponent {
 
   toggleModal() {
     this.isModalOpen = !this.isModalOpen;
-    this.toggle.emit({ show: this.isModalOpen, isResume: this.isResumePage, isEmail: this.isEmailPage });
+    this.toggle.emit({
+      show: this.isModalOpen,
+      isResume: this.isResumePage,
+      isEmail: this.isEmailPage,
+    });
+  }
+  onCloseEmail() {
+    this.router.navigate(['/main']);
+  }
+  onClearForm() {
+    this.clearformService.clearForm();
   }
 }

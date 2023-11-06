@@ -45,6 +45,9 @@ h1 {
   max-width: 850px;
   margin-bottom: 60px;
 }
+.padded-input {
+  padding-left: 5px;
+}
 .mobile-form-headline {
   display: none;
 }
