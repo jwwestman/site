@@ -119,3 +119,18 @@ p {
     padding: 24px;
   }
 }
+@media (max-width: 450px) {
+  #first-image {
+    max-width: 260px;
+  }
+  #second-image {
+    max-width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #third-image {
+    max-width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

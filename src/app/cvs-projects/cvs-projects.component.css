@@ -68,6 +68,12 @@ p {
   margin-left: auto;
   margin-right: auto;
 }
+#journey-image {
+  max-width: 400px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
 .role-container {
   display: flex;
   flex-direction: column;
@@ -109,5 +115,15 @@ p {
   }
   .disclaimer-text {
     padding: 24px;
+  }
+}
+@media (max-width: 450px) {
+  #kiosk-image {
+    max-width: 250px;
+  }
+  #journey-image {
+    max-width: 220px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }

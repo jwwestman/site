@@ -119,4 +119,11 @@
       padding: 24px;
     }
   }
-  
+  @media (max-width: 450px) {
+    #first-image {
+      max-width: 150px;
+    }
+    #second-image {
+      max-width: 240px;
+    }
+  }

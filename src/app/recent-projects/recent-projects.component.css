@@ -37,4 +37,19 @@ p {
   .recent-projects-sub-headline {
     max-width: 80vw;
   }
+  #recent-projects-hero {
+    width: 550px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 420px) {
+  .recent-projects-sub-headline {
+    max-width: 80vw;
+  }
+  #recent-projects-hero {
+    width: 280px;
+    height: auto;
+    margin-bottom: 15px;
+  }
 }
