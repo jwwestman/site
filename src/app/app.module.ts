@@ -19,6 +19,7 @@ import { RecentProjectsComponent } from './recent-projects/recent-projects.compo
 import { CvsProjectsComponent } from './cvs-projects/cvs-projects.component';
 import { AetnaProjectsComponent } from './aetna-projects/aetna-projects.component';
 import { BofaProjectsComponent } from './bofa-projects/bofa-projects.component';
+import { FidelityProjectsComponent } from './fidelity-projects/fidelity-projects.component';
 
 @NgModule({
   declarations: [
@@ -32,6 +33,7 @@ import { BofaProjectsComponent } from './bofa-projects/bofa-projects.component';
     CvsProjectsComponent,
     AetnaProjectsComponent,
     BofaProjectsComponent,
+    FidelityProjectsComponent,
   ],
   imports: [
     BrowserModule,

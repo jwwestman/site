@@ -11,9 +11,13 @@
     <div class="recent-projects-headline"><h4>Recent Projects</h4></div>
     <div class="recent-projects-sub-headline">
       <p>
+        Schedule a meeting on my <a href="/resume">calendar</a> to review
+        supporting documents. Looking forward to connecting.
+      </p>
+      <!-- <p>
         Ready to dive deeper? Access my full resume 
         <a href="/resume">here</a>. Looking forward to collaborating.
-      </p>
+      </p> -->
     </div>
     <div class="mb-3">
       <select
@@ -27,8 +31,9 @@
     </div>
     <ng-container [ngSwitch]="selectedEmployerId">
       <app-cvs-projects *ngSwitchCase="'cvs'"></app-cvs-projects>
-      <app-aetna-projects *ngSwitchCase="'aetna'"></app-aetna-projects>      
+      <app-aetna-projects *ngSwitchCase="'aetna'"></app-aetna-projects>
       <app-bofa-projects *ngSwitchCase="'bofa'"></app-bofa-projects>
+      <app-fidelity-projects *ngSwitchCase="'fido'"></app-fidelity-projects>
     </ng-container>
   </div>
 </main>
