@@ -53,12 +53,53 @@ h2 {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
 }
-#avatar {
-  margin-top: 60px;
-  margin-bottom: 60px;
+.avatar-section {
+  position: relative;
+  /* Add width or max-width if necessary, for example: */
+  /* width: 200px; */ /* Or whatever width your avatar should be */
+}
+
+.img-fluid {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.avatar-section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+#avatar-winking {
+  margin-top: 30px;
+  margin-bottom: 30px;
   width: 100%;
   max-width: 200px;
+  display: none;  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; 
+  transition: opacity 0.3s ease-in-out;
+  z-index: 1; 
 }
+
+#avatar-smiling {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 200px;
+  position: relative;
+  z-index: 2; /* Above the winking avatar */
+}
+
+.avatar-section:hover #avatar-winking {
+  display: block; /* Show the winking avatar on hover */
+  opacity: 1; /* Make the winking avatar fully visible */
+}
+
+.avatar-section:hover #avatar-smiling {
+  opacity: 0; /* Hide the smiling avatar on hover */
+}
+
 #tech-image {
   width: 800px;
   height: auto;
