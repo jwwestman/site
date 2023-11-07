@@ -28,6 +28,9 @@ p {
   height: auto;
   margin-bottom: 30px;
 }
+.recent-projects-sub-headline{
+  max-width: 750px;
+}
 .custom-select {
   width: 300px;
   padding: 0.5rem;
