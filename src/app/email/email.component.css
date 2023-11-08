@@ -19,8 +19,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 80vh;
+  height: 100vh;
   width: 100%;
+}
+.email-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  height: 90vh;
 }
 .form-container {
   display: flex;
@@ -114,7 +121,8 @@ h1 {
     top: 5px;
   }
   #avatar {
-    height: 120px;
+    width: 100%;
+    max-width: 200px;
   }
   .form-container {
     width: 95vw;
