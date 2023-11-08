@@ -86,16 +86,16 @@ h2 {
   width: 100%;
   max-width: 200px;
   position: relative;
-  z-index: 2; 
+  z-index: 2;
 }
 
 .avatar-section:hover #avatar-winking {
-  display: block; 
-  opacity: 1; 
+  display: block;
+  opacity: 1;
 }
 
 .avatar-section:hover #avatar-smiling {
-  opacity: 0; 
+  opacity: 0;
 }
 
 #tech-image {
@@ -130,20 +130,6 @@ h2 {
   position: relative;
   padding-top: 100px;
 }
-
-.design-container {
-  max-width: 1100px;
-  height: auto;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -100px;
-  background-color: white;
-  border-radius: 25px;
-  padding: 20px;
-  z-index: 2;
-  position: relative;
-  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
-}
 .greeting-section {
   max-width: 1000px;
   width: 100%;
@@ -166,6 +152,19 @@ h2 {
 .skill-subtitle {
   flex: 0;
   flex-grow: 0;
+}
+.design-container {
+  max-width: 1100px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -100px;
+  background-color: white;
+  border-radius: 25px;
+  padding: 20px;
+  z-index: 2;
+  position: relative;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
 }
 .column {
   flex: 1 1 calc(33.333% - 40px);
@@ -239,7 +238,7 @@ h2 {
   height: auto;
   display: block;
 }
-@media (max-width: 768px) {
+@media (max-width: 800px) {
   .design-container {
     max-width: 90vw;
   }
@@ -315,7 +314,7 @@ h2 {
     padding-left: 10px;
     padding-right: 10px;
   }
-  #col-1  {
+  #col-1 {
     margin-top: 40px;
   }
   #col-1 .top {
