@@ -100,7 +100,7 @@ h1 {
   }
 }
 @media (max-width: 450px) {
-  .form-headline > h1 {
+  .form-headline {
     display: none;
   }
   .mobile-form-headline h1 {
@@ -108,6 +108,7 @@ h1 {
     text-align: center;
   }
   .mobile-form-headline {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
