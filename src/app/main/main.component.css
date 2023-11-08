@@ -55,8 +55,6 @@ h2 {
 }
 .avatar-section {
   position: relative;
-  /* Add width or max-width if necessary, for example: */
-  /* width: 200px; */ /* Or whatever width your avatar should be */
 }
 
 .img-fluid {
@@ -73,13 +71,13 @@ h2 {
   margin-bottom: 30px;
   width: 100%;
   max-width: 200px;
-  display: none;  
+  display: none;
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%; 
+  width: 100%;
   transition: opacity 0.3s ease-in-out;
-  z-index: 1; 
+  z-index: 1;
 }
 
 #avatar-smiling {
@@ -88,16 +86,16 @@ h2 {
   width: 100%;
   max-width: 200px;
   position: relative;
-  z-index: 2; /* Above the winking avatar */
+  z-index: 2; 
 }
 
 .avatar-section:hover #avatar-winking {
-  display: block; /* Show the winking avatar on hover */
-  opacity: 1; /* Make the winking avatar fully visible */
+  display: block; 
+  opacity: 1; 
 }
 
 .avatar-section:hover #avatar-smiling {
-  opacity: 0; /* Hide the smiling avatar on hover */
+  opacity: 0; 
 }
 
 #tech-image {
@@ -250,7 +248,29 @@ h2 {
   }
   .column {
     flex-basis: auto;
-    margin-top: 5px;
+    margin-top: 125px;
+  }
+  .middle {
+    margin-top: 60px;
+  }
+  #col-1 .middle {
+    height: 190px;
+    margin-top: 80px;
+  }
+  #col-2 .top {
+    height: 190px;
+  }
+  #col-2 .middle {
+    height: 100px;
+    margin-bottom: 40px;
+  }
+  #col-3 .middle {
+    height: 100px;
+    margin-bottom: 40px;
+  }
+  #col-2,
+  #col-3 {
+    margin-top: 25px;
   }
   .column:not(:last-child) {
     border-right: none;
@@ -283,7 +303,8 @@ h2 {
   .avatar-section {
     margin-top: -10px;
   }
-  #avatar-smiling, #avatar-winking {
+  #avatar-smiling,
+  #avatar-winking {
     margin-top: 40px;
     margin-bottom: 20px;
     width: 100%;
@@ -293,6 +314,20 @@ h2 {
     font-size: 2.3rem;
     padding-left: 10px;
     padding-right: 10px;
+  }
+  #col-1  {
+    margin-top: 40px;
+  }
+  #col-1 .top {
+    height: 180px;
+    margin-top: 10px;
+  }
+  #col-1 .middle {
+    height: 190px;
+    margin-top: 10px;
+  }
+  #col-3 {
+    margin-top: 10px;
   }
   .logo-section-mobile {
     display: flex;
