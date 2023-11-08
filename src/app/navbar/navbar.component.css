@@ -87,6 +87,15 @@ body {
     justify-content: center;
   }
 }
+
+@media (max-width: 850px) {
+  .right-section {
+    margin-right: 40px;
+  }
+  .navbar-brand {
+    margin-left: 25px;
+  }
+}
 @media (max-width: 500px) {
   .navbar-brand > img {
     height: 55px;

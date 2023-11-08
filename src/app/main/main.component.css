@@ -103,6 +103,22 @@ h2 {
   height: auto;
   margin-bottom: -1px;
 }
+#col-1-image,
+#col-2-image,
+#col-3-image {
+  width: 350px;
+  height: auto;
+  padding-bottom: 10px;
+}
+#col-3-image {
+  padding-top: 20px;
+}
+#col-2-image {
+  padding-top: 5px;
+}
+#col-1 .middle {
+  margin-top: -10px;
+}
 .hand {
   font-size: 42px;
   margin-right: 32px;
@@ -161,7 +177,7 @@ h2 {
   margin-top: -100px;
   background-color: white;
   border-radius: 25px;
-  padding: 20px;
+  padding: 5px;
   z-index: 2;
   position: relative;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.15);
@@ -170,10 +186,10 @@ h2 {
   flex: 1 1 calc(33.333% - 40px);
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   padding-bottom: 20px;
   height: auto;
   padding: 20px;
+  margin-top: 20px;
 }
 .column:not(:last-child) {
   border-right: 1px solid #ccc;
@@ -194,7 +210,12 @@ h2 {
 .column .bottom {
   margin-top: -40px;
 }
-
+#col-3 .middle {
+  margin-top: 10px;
+}
+#col-3 .bottom {
+  margin-top: -50px;
+}
 .vertical-text {
   display: flex;
   flex-direction: column;
@@ -238,6 +259,17 @@ h2 {
   height: auto;
   display: block;
 }
+@media (max-width: 850px) {
+  .title-section {
+    max-width: 70vw;
+  }
+  h1 {
+    font-size: 3.6rem;
+  }
+  .sub-title {
+    max-width: 60vw;
+  }
+}
 @media (max-width: 800px) {
   .design-container {
     max-width: 90vw;
@@ -260,17 +292,19 @@ h2 {
     height: 190px;
   }
   #col-2 .middle {
-    height: 100px;
-    margin-bottom: 40px;
+    height: 120px;
+    padding-top: 20px;
   }
   #col-3 .middle {
-    height: 100px;
+    height: 180px;
+    margin-top: 100px;
     margin-bottom: 40px;
   }
-  #col-2,
-  #col-3 {
-    margin-top: 25px;
+  #col-3 .bottom {
+    height: 180px;
+    margin-bottom: 20px;
   }
+
   .column:not(:last-child) {
     border-right: none;
   }
@@ -287,13 +321,15 @@ h2 {
     display: none;
   }
   .title-section {
-    font-size: 2.5rem;
-    padding-left: 20px;
-    padding-right: 20px;
+    max-width: 90%;
+    font-size: 2.2rem;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .sub-title {
-    padding-left: 20px;
-    padding-right: 20px;
+    max-width: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .hand {
     font-size: 36px;
@@ -317,6 +353,13 @@ h2 {
   #col-1 {
     margin-top: 40px;
   }
+  #col-2 {
+    margin-top: 20px;
+    margin-bottom: -10px;
+  }
+  #col-3 {
+    margin-top: 0px;
+  }
   #col-1 .top {
     height: 180px;
     margin-top: 10px;
@@ -325,8 +368,16 @@ h2 {
     height: 190px;
     margin-top: 10px;
   }
-  #col-3 {
+  #col-3 .middle {
+    margin-top: 40px;
+  }
+  #col-2 .bottom {
+    height: 190px;
     margin-top: 10px;
+  }
+  #col-3 .bottom {
+    height: 120px;
+    margin-top: -25px;
   }
   .logo-section-mobile {
     display: flex;
