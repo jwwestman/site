@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2rem;
+  color: #3f3d56;
+}
+.success-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  height: 80vh;
+}
+#avatar {
+  margin-top: 0;
+  margin-bottom: 60px;
+  width: 100%;
+  max-width: 200px;
+}
+.avatar-section {
+  position: relative;
+  z-index: 2;
+}
+.spinner {
+  margin-top: 100px;
+}

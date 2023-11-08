@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from './main/main.component';
 import { EmailComponent } from './email/email.component';
 import { ResumeComponent } from './resume/resume.component';
+import { MessageSentComponent } from './message-sent/message-sent.component';
 import { RecentProjectsComponent } from './recent-projects/recent-projects.component';
 
 const routes: Routes = [
@@ -10,6 +11,7 @@ const routes: Routes = [
   { path: 'main', component: MainComponent },
   { path: 'recent-projects', component: RecentProjectsComponent },
   { path: 'email', component: EmailComponent },
+  { path: 'success', component: MessageSentComponent },
   { path: 'resume', component: ResumeComponent },
 ];
 

@@ -9,9 +9,10 @@
   </figure>
   <div class="form-section">
     <div class="form-headline text-center">
-      <h1>
-        Thanks for your interest! For job or collaboration inquiries, please connect with me below.
-      </h1>
+      <p class="message-text">
+        Thanks for your interest! For job or collaboration inquiries, please
+        connect with me below.
+      </p>
     </div>
     <div class="mobile-form-headline mb-5">
       <h1>I look forward to connecting!</h1>
@@ -40,10 +41,19 @@
           ></textarea>
         </div>
         <div class="form-buttons">
-          <button type="submit" class="btn btn-light custom-padding">
+          <button
+            type="button"
+            class="btn btn-light custom-padding"
+            (click)="onCancel()"
+          >
             Cancel
           </button>
-          <button type="submit" class="btn btn-dark custom-padding" id="send-button">
+
+          <button
+            type="submit"
+            class="btn btn-dark custom-padding"
+            id="send-button"
+          >
             Send
           </button>
         </div>

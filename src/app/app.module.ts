@@ -20,6 +20,8 @@ import { CvsProjectsComponent } from './cvs-projects/cvs-projects.component';
 import { AetnaProjectsComponent } from './aetna-projects/aetna-projects.component';
 import { BofaProjectsComponent } from './bofa-projects/bofa-projects.component';
 import { FidelityProjectsComponent } from './fidelity-projects/fidelity-projects.component';
+import { MessageSentComponent } from './message-sent/message-sent.component';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -34,6 +36,7 @@ import { FidelityProjectsComponent } from './fidelity-projects/fidelity-projects
     AetnaProjectsComponent,
     BofaProjectsComponent,
     FidelityProjectsComponent,
+    MessageSentComponent,
   ],
   imports: [
     BrowserModule,
@@ -46,6 +49,7 @@ import { FidelityProjectsComponent } from './fidelity-projects/fidelity-projects
     FormsModule,
     RouterModule,
     HttpClientModule,
+    MatProgressSpinnerModule
   ],
   providers: [],
   bootstrap: [AppComponent],

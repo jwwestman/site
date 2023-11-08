@@ -8,6 +8,7 @@ import {
   NgForm,
 } from '@angular/forms';
 import { EmailService } from '../service/email.service';
+import { Router } from '@angular/router';
 import { FormspreeResponse } from '../models/formspree';
 import { ClearFormService } from '../service/clear-form.service';
 
@@ -25,8 +26,9 @@ export class EmailComponent implements OnInit {
 
   constructor(
     private builder: FormBuilder,
-    private contact: EmailService,
-    private clearformService: ClearFormService
+    private emailService: EmailService,
+    private clearformService: ClearFormService,
+    private router: Router
   ) {}
 
   ngOnInit() {
@@ -44,19 +46,23 @@ export class EmailComponent implements OnInit {
   }
 
   onSubmit() {
-    this.contact.PostMessage(this.FormData.value).subscribe(
+    this.emailService.PostMessage(this.FormData.value).subscribe(
       (response: FormspreeResponse) => {
-        this.isSubmitted = true;
         if (response.ok) {
-          this.responseMessage = 'Email sent successfully!';
+          this.router.navigate(['/success']);
         } else if (response.error) {
-          this.responseMessage = response.error;
+          // Handle the error case
         }
       },
       (error) => {
         console.log({ error });
       }
     );
+  }
+
+  onCancel() {
+    this.clearEmailForm();  
+    this.router.navigate(['/main']); 
   }
   clearEmailForm() {
     this.FormData.reset();
