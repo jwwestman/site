@@ -12,7 +12,12 @@ h1 {
 h2 {
   font-size: 2rem;
 }
-
+.sub-title,
+.resume-link {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: #2d3436;
+}
 .skill-title {
   font-family: "Lalezar", sans-serif;
   font-size: 1.3rem;
@@ -333,6 +338,11 @@ h2 {
   }
   .sub-title {
     max-width: 90%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .resume-link {
+    max-width: 80%;
     padding-left: 10px;
     padding-right: 10px;
   }
