@@ -24,11 +24,11 @@ p {
   align-items: center;
 }
 #recent-projects-hero {
-  width: 700px;
+  width: 600px;
   height: auto;
   margin-bottom: 30px;
 }
-.recent-projects-sub-headline{
+.recent-projects-sub-headline {
   max-width: 750px;
 }
 .custom-select {

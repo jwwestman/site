@@ -12,21 +12,20 @@ h1 {
 h2 {
   font-size: 2rem;
 }
-.sub-title,
-.resume-link {
+.tagline {
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #2d3436;
 }
 .skill-title {
   font-family: "Lalezar", sans-serif;
   font-size: 1.3rem;
-  color: #373461;
+  color: #2e26a5;
   flex-grow: 1;
 }
 .skill-subtitle {
   font-family: "Open Sans", sans-serif;
-  font-size: 1rem;
+  font-size: .9rem;
   font-weight: bold;
   color: #373461;
 }
@@ -331,8 +330,8 @@ h2 {
   }
   .title-section {
     max-width: 90%;
-    font-size: 2rem;
-    padding-left: 5cap;
+    font-size: 2.3rem;
+    padding-left: 5px;
     padding-right: 5px;
     margin-bottom: 5px;
   }
@@ -359,6 +358,9 @@ h2 {
     margin-bottom: 20px;
     width: 100%;
     max-width: 180px;
+  }
+  .tagline {
+    font-size: 1rem;
   }
   .greeting-title {
     font-size: 2.3rem;

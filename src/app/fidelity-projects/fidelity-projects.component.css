@@ -23,8 +23,13 @@ p {
   font-size: 0.8rem;
   color: #373461;
 }
-.white-text {
+.company-sub-title p.white-text {
+  font-family: "Open Sans", sans-serif;
   color: white;
+  font-weight: 300;
+}
+.company-sub-title strong {
+  font-weight: bold;
 }
 .dark-text {
   color: #3f3d56;
@@ -109,8 +114,8 @@ p {
 .disclaimer-text {
   max-width: 800px;
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 @media (max-width: 768px) {
   .project-container {
