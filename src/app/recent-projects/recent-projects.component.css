@@ -32,6 +32,8 @@ p {
   max-width: 750px;
 }
 .custom-select {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
   width: 300px;
   padding: 0.5rem;
   margin-top: 30px;
