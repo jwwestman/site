@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class RecentProjectsComponent implements OnInit {
   employers = [
     { id: 'cvs', name: 'CVS Health' },
-    { id: 'aetna', name: 'Aetna Insurance' },
+    { id: 'aetna', name: 'Aetna' },
     { id: 'bofa', name: 'Bank of America' },
     { id: 'fido', name: 'Fidelity Investments' },
   ];

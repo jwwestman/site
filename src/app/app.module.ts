@@ -17,11 +17,13 @@ import { FooterComponent } from './footer/footer.component';
 import { ResumeComponent } from './resume/resume.component';
 import { RecentProjectsComponent } from './recent-projects/recent-projects.component';
 import { CvsProjectsComponent } from './cvs-projects/cvs-projects.component';
+import { CvsDetails1Component } from './cvs-details1/cvs-details1.component';
 import { AetnaProjectsComponent } from './aetna-projects/aetna-projects.component';
 import { BofaProjectsComponent } from './bofa-projects/bofa-projects.component';
 import { FidelityProjectsComponent } from './fidelity-projects/fidelity-projects.component';
 import { MessageSentComponent } from './message-sent/message-sent.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatDialogModule } from '@angular/material/dialog';
 
 @NgModule({
   declarations: [
@@ -32,11 +34,12 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     FooterComponent,
     ResumeComponent,
     RecentProjectsComponent,
-    CvsProjectsComponent,
     AetnaProjectsComponent,
     BofaProjectsComponent,
     FidelityProjectsComponent,
     MessageSentComponent,
+    CvsProjectsComponent,
+    CvsDetails1Component
   ],
   imports: [
     BrowserModule,
@@ -49,7 +52,8 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
     FormsModule,
     RouterModule,
     HttpClientModule,
-    MatProgressSpinnerModule
+    MatProgressSpinnerModule,
+    MatDialogModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

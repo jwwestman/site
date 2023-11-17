@@ -3,19 +3,34 @@
   padding: 0;
   box-sizing: border-box;
 }
+h4 {
+  font-family: Lalezar, sans-serif;
+  font-size: 2.25rem;
+  color: #ef1ed1;
+}
 h5 {
   font-family: Lalezar, sans-serif;
-  font-size: 2.1rem;
+  font-size: 1.75rem;
   color: #ef1ed1;
 }
 h6 {
   font-family: Lalezar, sans-serif;
-  font-size: 1.6rem;
+  font-size: 1.25rem;
   color: #373461;
 }
 p {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
+}
+.modal-link {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  color: #2779F6;
+  margin-top: 10px;
+}
+.modal-link:hover {
+  cursor: pointer;
+  color: #ef1ed1; 
 }
 .disclaimer {
   font-family: "Open Sans", sans-serif;
@@ -28,6 +43,7 @@ p {
   font-family: "Open Sans", sans-serif;
   color: white;
   font-weight: 300;
+  line-height: 1.75;
 }
 .company-sub-title strong {
   font-weight: bold;
