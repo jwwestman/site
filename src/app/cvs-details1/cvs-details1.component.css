@@ -63,6 +63,7 @@ p {
 }
 
 .close-button {
+  color: black;
   position: absolute;
   top: 10px;
   right: 30px;
@@ -72,7 +73,6 @@ p {
   cursor: pointer;
   padding: 0;
   margin: 0;
-  font-size: 32px;
 }
 
 .close-button mat-icon {
@@ -80,9 +80,6 @@ p {
   margin-right: 10px;
 }
 
-.close-button:hover {
-  color: #666;
-}
 .content-container {
   margin-top: 25px;
   max-width: 1000px;
