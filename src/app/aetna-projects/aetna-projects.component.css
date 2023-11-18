@@ -20,12 +20,14 @@ p {
 .modal-link {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  color: #2779f6;
-  margin-top: 10px;
+  color: white;
+  margin-top: 20px;
+  padding: 5px 10px;
+  border-radius: 22px;
 }
 .modal-link:hover {
   cursor: pointer;
-  color: #ef1ed1;
+  color: #636e72;
 }
 .disclaimer {
   font-family: "Open Sans", sans-serif;

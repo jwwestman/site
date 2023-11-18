@@ -17,7 +17,7 @@ export class RecentProjectsComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    this.selectedEmployerId = 'cvs';
+    this.selectedEmployerId = 'fido';
   }
 
   onSelectEmployer(id: string): void {
