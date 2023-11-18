@@ -8,17 +8,25 @@ import { BofaDetails1Component } from '../bofa-details1/bofa-details1.component'
   styleUrls: ['./bofa-projects.component.css'],
 })
 export class BofaProjectsComponent implements OnInit {
+
+  private correctPassword: string = 'SavvyJ';
+
   constructor(public dialog: MatDialog) {}
 
   ngOnInit(): void {}
 
   openDetailsModal(): void {
-    const dialogRef = this.dialog.open(BofaDetails1Component, {
-      width: '100%',
-    });
+    const password = prompt('Please enter the password:');
+    if (password === this.correctPassword) {
+      const dialogRef = this.dialog.open(BofaDetails1Component, {
+        width: '100%',
+      });
 
-    dialogRef.afterClosed().subscribe((result) => {
-      console.log(`Dialog result: ${result}`);
-    });
+      dialogRef.afterClosed().subscribe((result) => {
+        console.log(`Dialog result: ${result}`);
+      });
+    } else {
+      alert('Incorrect password!');
+    }
   }
 }

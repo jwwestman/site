@@ -27,6 +27,8 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { BofaDetails1Component } from './bofa-details1/bofa-details1.component';
 import { FidoDetails1Component } from './fido-details1/fido-details1.component';
 import { CvsDetails2Component } from './cvs-details2/cvs-details2.component';
+import { AetnaDetails1Component } from './aetna-details1/aetna-details1.component';
+import { AetnaDetails2Component } from './aetna-details2/aetna-details2.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +47,9 @@ import { CvsDetails2Component } from './cvs-details2/cvs-details2.component';
     CvsDetails1Component,
     BofaDetails1Component,
     FidoDetails1Component,
-    CvsDetails2Component
+    CvsDetails2Component,
+    AetnaDetails1Component,
+    AetnaDetails2Component
   ],
   imports: [
     BrowserModule,
