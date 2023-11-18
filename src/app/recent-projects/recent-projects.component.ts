@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecentProjectsComponent implements OnInit {
   employers = [
-    { id: 'cvs', name: 'CVS Health' },
-    { id: 'aetna', name: 'Aetna' },
-    { id: 'bofa', name: 'Bank of America' },
     { id: 'fido', name: 'Fidelity Investments' },
+    { id: 'bofa', name: 'Bank of America' },
+    { id: 'aetna', name: 'Aetna' },
+    { id: 'cvs', name: 'CVS Health' },
   ];
   selectedEmployerId: string | null = null;
 

@@ -24,6 +24,9 @@ import { FidelityProjectsComponent } from './fidelity-projects/fidelity-projects
 import { MessageSentComponent } from './message-sent/message-sent.component';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatDialogModule } from '@angular/material/dialog';
+import { BofaDetails1Component } from './bofa-details1/bofa-details1.component';
+import { FidoDetails1Component } from './fido-details1/fido-details1.component';
+import { CvsDetails2Component } from './cvs-details2/cvs-details2.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +42,10 @@ import { MatDialogModule } from '@angular/material/dialog';
     FidelityProjectsComponent,
     MessageSentComponent,
     CvsProjectsComponent,
-    CvsDetails1Component
+    CvsDetails1Component,
+    BofaDetails1Component,
+    FidoDetails1Component,
+    CvsDetails2Component
   ],
   imports: [
     BrowserModule,

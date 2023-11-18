@@ -1,0 +1,161 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h4 {
+  font-family: Lalezar, sans-serif;
+  font-size: 2.25rem;
+  color: #54ac0f;
+}
+h5 {
+  font-family: Lalezar, sans-serif;
+  font-size: 2.2rem;
+  color: #54ac0f;
+}
+h6 {
+  font-family: Lalezar, sans-serif;
+  font-size: 1.6rem;
+  color: #373461;
+}
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+}
+.subtitle {
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  color: black;
+  margin-bottom: 5px;
+}
+.back-up {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+/* ##this is the line break */
+.project-body1::after,
+.project-body2::after,
+.project-body3::after,
+.project-body4::after {
+  content: "";
+  display: block;
+  height: 2px;
+  background: #cacaca;
+  margin-top: 40px;
+}
+.container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+  background-color: white;
+}
+#details-header-logo {
+  transform: scale(0.8);
+}
+
+::ng-deep .mat-dialog-container {
+  padding: 0 !important;
+  margin: 0;
+  max-width: none !important;
+  max-height: none !important;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+}
+
+::ng-deep .cdk-overlay-pane {
+  max-width: none !important;
+  width: 100vw;
+  height: 100vh;
+}
+
+#details-header-logo {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.header-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f7;
+  width: 100%;
+  height: auto;
+}
+
+.close-button {
+  color: black;
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  border: none;
+  outline: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+.close-button mat-icon {
+  font-size: 32px;
+  margin-right: 10px;
+}
+
+.content-container {
+  margin-top: 25px;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.project-body,
+.project-body1 {
+  margin-top: 15px;
+}
+
+.disclaimer {
+  font-family: "Open Sans", sans-serif;
+  font-style: italic;
+  font-size: 0.85rem;
+  color: #373461;
+}
+.disclaimer-container {
+  background-color: #f5f5f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  height: auto;
+  margin-top: 50px;
+  margin-right: auto;
+}
+.disclaimer-text {
+  max-width: 1000px;
+  width: 100%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media (max-width: 576px) {
+  ::ng-deep .cdk-overlay-pane {
+    width: calc(100vw - 40px); /* 16px on each side */
+    margin: 16px auto; /* Center the modal */
+  }
+
+  ::ng-deep .mat-dialog-container {
+    width: auto; /* Reset width to auto */
+    height: auto; /* Reset height to auto */
+  }
+  .content-container {
+    margin: 30px;
+  }
+  .disclaimer-text {
+    padding: 15px;
+  }
+  .close-button {
+    top: 20px;
+    right: 20px;
+  }
+}
