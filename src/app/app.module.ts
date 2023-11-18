@@ -29,6 +29,7 @@ import { FidoDetails1Component } from './fido-details1/fido-details1.component';
 import { CvsDetails2Component } from './cvs-details2/cvs-details2.component';
 import { AetnaDetails1Component } from './aetna-details1/aetna-details1.component';
 import { AetnaDetails2Component } from './aetna-details2/aetna-details2.component';
+import { IvestProjectsComponent } from './ivest-projects/ivest-projects.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,8 @@ import { AetnaDetails2Component } from './aetna-details2/aetna-details2.componen
     FidoDetails1Component,
     CvsDetails2Component,
     AetnaDetails1Component,
-    AetnaDetails2Component
+    AetnaDetails2Component,
+    IvestProjectsComponent
   ],
   imports: [
     BrowserModule,

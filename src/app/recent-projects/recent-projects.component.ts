@@ -7,17 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RecentProjectsComponent implements OnInit {
   employers = [
-    { id: 'fido', name: 'Fidelity Investments' },
-    { id: 'bofa', name: 'Bank of America' },
     { id: 'aetna', name: 'Aetna' },
+    { id: 'bofa', name: 'Bank of America' },
     { id: 'cvs', name: 'CVS Health' },
+    { id: 'fido', name: 'Fidelity Investments' },
+    { id: 'ivest', name: 'iVest' },
   ];
   selectedEmployerId: string | null = null;
 
   constructor() {}
 
   ngOnInit(): void {
-    this.selectedEmployerId = 'fido';
+    this.selectedEmployerId = 'aetna';
   }
 
   onSelectEmployer(id: string): void {

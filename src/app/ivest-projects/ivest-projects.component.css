@@ -6,7 +6,7 @@
 h5 {
   font-family: Lalezar, sans-serif;
   font-size: 2.1rem;
-  color: #00a3ff;
+  color: #c937fc;
 }
 h6 {
   font-family: Lalezar, sans-serif;
@@ -50,6 +50,7 @@ p {
 .dark-text {
   color: #3f3d56;
 }
+
 .header-container {
   display: flex;
   flex-direction: column;
@@ -66,7 +67,7 @@ p {
   height: auto;
 }
 .project-title > h6 {
-  color: #00a3ff;
+  color: #c937fc;
 }
 .company-content {
   max-width: 800px;
@@ -84,13 +85,20 @@ p {
   flex-direction: column;
 }
 #first-image {
-  max-width: 200px;
+  max-width: 300px;
   height: auto;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
 }
 #second-image {
+  max-width: 300px;
+  height: auto;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#third-image {
   max-width: 300px;
   height: auto;
   margin-top: 20px;
@@ -142,9 +150,16 @@ p {
 }
 @media (max-width: 450px) {
   #first-image {
-    max-width: 150px;
+    max-width: 260px;
   }
   #second-image {
-    max-width: 240px;
+    max-width: 220px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #third-image {
+    max-width: 220px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
