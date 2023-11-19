@@ -148,4 +148,8 @@ p {
     top: 20px;
     right: 20px;
   }
+  #details-header-logo {
+    width: 250px;
+    padding-top: 20px;
+  }
 }

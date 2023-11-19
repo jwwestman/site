@@ -140,13 +140,13 @@ p {
 }
 @media (max-width: 576px) {
   ::ng-deep .cdk-overlay-pane {
-    width: calc(100vw - 40px);  
-    margin: 16px auto;  
+    width: calc(100vw - 40px);
+    margin: 16px auto;
   }
 
   ::ng-deep .mat-dialog-container {
-    width: auto;  
-    height: auto;  
+    width: auto;
+    height: auto;
   }
   .content-container {
     margin: 30px;
@@ -157,5 +157,9 @@ p {
   .close-button {
     top: 20px;
     right: 20px;
+  }
+  #details-header-logo {
+    width: 250px;
+    padding-top: 20px;
   }
 }

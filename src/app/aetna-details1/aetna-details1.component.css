@@ -7,12 +7,12 @@
 h4 {
   font-family: Lalezar, sans-serif;
   font-size: 2.25rem;
-  color: #00A3FF;
+  color: #00a3ff;
 }
 h5 {
   font-family: Lalezar, sans-serif;
   font-size: 2.2rem;
-  color: #00A3FF;
+  color: #00a3ff;
 }
 h6 {
   font-family: Lalezar, sans-serif;
@@ -157,5 +157,9 @@ p {
   .close-button {
     top: 20px;
     right: 20px;
+  }
+  #details-header-logo {
+    width: 250px;
+    padding-top: 20px;
   }
 }
