@@ -3,16 +3,15 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 h4 {
   font-family: Lalezar, sans-serif;
   font-size: 2.25rem;
-  color: #54ac0f;
+  color: #ef3d5b;
 }
 h5 {
   font-family: Lalezar, sans-serif;
   font-size: 2.2rem;
-  color: #54ac0f;
+  color: #ef3d5b;
 }
 h6 {
   font-family: Lalezar, sans-serif;
@@ -23,28 +22,9 @@ p {
   font-family: "Open Sans", sans-serif;
   font-size: 1rem;
 }
-.subtitle {
-  font-family: "Open Sans", sans-serif;
-  font-weight: bold;
-  font-size: 1rem;
-  color: black;
-  margin-bottom: 5px;
-}
 .back-up {
-  font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
-  font-weight: bold;
-}
-/* ##this is the line break */
-.project-body1::after,
-.project-body2::after,
-.project-body3::after,
-.project-body4::after {
-  content: "";
-  display: block;
-  height: 2px;
-  background: #cacaca;
-  margin-top: 40px;
+  color: #3498db;
 }
 .container-fluid {
   padding-left: 0;
@@ -103,7 +83,14 @@ p {
   font-size: 32px;
   margin-right: 10px;
 }
-
+.image-container {
+  margin-top: 60px;
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .content-container {
   margin-top: 25px;
   max-width: 1000px;
@@ -114,7 +101,14 @@ p {
 .project-body1 {
   margin-top: 15px;
 }
-
+/* ##this is the line break */
+.project-body1::after {
+  content: "";
+  display: block;
+  height: 1px;
+  background: #cacaca;
+  margin-top: 60px;
+}
 .disclaimer {
   font-family: "Open Sans", sans-serif;
   font-style: italic;
@@ -159,10 +153,14 @@ p {
     right: 20px;
   }
   .back-up {
-    font-size: 1rem;
+    font-size: 1.25rem;
   }
   #details-header-logo {
     width: 250px;
+    padding-top: 20px;
+  }
+  #balance-diagram {
+    width: 185px;
     padding-top: 20px;
   }
 }

@@ -152,4 +152,8 @@ p {
     width: 250px;
     padding-top: 20px;
   }
+  #balance-diagram {
+    width: 185px;
+    padding-top: 20px;
+  }
 }

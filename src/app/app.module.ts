@@ -30,6 +30,7 @@ import { CvsDetails2Component } from './cvs-details2/cvs-details2.component';
 import { AetnaDetails1Component } from './aetna-details1/aetna-details1.component';
 import { AetnaDetails2Component } from './aetna-details2/aetna-details2.component';
 import { IvestProjectsComponent } from './ivest-projects/ivest-projects.component';
+import { BofaDetails2Component } from './bofa-details2/bofa-details2.component';
 
 @NgModule({
   declarations: [
@@ -51,7 +52,8 @@ import { IvestProjectsComponent } from './ivest-projects/ivest-projects.componen
     CvsDetails2Component,
     AetnaDetails1Component,
     AetnaDetails2Component,
-    IvestProjectsComponent
+    IvestProjectsComponent,
+    BofaDetails2Component
   ],
   imports: [
     BrowserModule,
