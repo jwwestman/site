@@ -14,7 +14,6 @@ import { MainComponent } from './main/main.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { EmailComponent } from './email/email.component';
 import { FooterComponent } from './footer/footer.component';
-import { ResumeComponent } from './resume/resume.component';
 import { RecentProjectsComponent } from './recent-projects/recent-projects.component';
 import { CvsProjectsComponent } from './cvs-projects/cvs-projects.component';
 import { CvsDetails1Component } from './cvs-details1/cvs-details1.component';
@@ -39,7 +38,6 @@ import { BofaDetails2Component } from './bofa-details2/bofa-details2.component';
     NavbarComponent,
     EmailComponent,
     FooterComponent,
-    ResumeComponent,
     RecentProjectsComponent,
     AetnaProjectsComponent,
     BofaProjectsComponent,
