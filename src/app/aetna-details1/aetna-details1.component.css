@@ -30,6 +30,10 @@ p {
   color: black;
   margin-bottom: 5px;
 }
+.aetna-plug {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
 .back-up {
   font-family: "Open Sans", sans-serif;
   font-size: 1.5rem;
