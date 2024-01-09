@@ -11,6 +11,13 @@ export class CvsDetails2Component implements OnInit {
 
   ngOnInit(): void {}
 
+  scrollToTop(): void {
+    const dialogContainer = document.querySelector('.mat-dialog-container');
+    if (dialogContainer instanceof HTMLElement) {
+      dialogContainer.scrollTop = 0;
+    }
+  }
+
   closeDialog(): void {
     this.dialogRef.close();
   }

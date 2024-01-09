@@ -23,8 +23,19 @@ p {
   font-size: 1rem;
 }
 .back-up {
-  font-size: 1.5rem;
-  color: #3498db;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: right;
+}
+
+.back-up a {
+  text-decoration: none;
+  color: black;
+}
+
+.back-up a:hover {
+  color: #007fff;
 }
 .container-fluid {
   padding-left: 0;

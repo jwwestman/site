@@ -90,6 +90,23 @@ p {
 .project-body1 {
   margin-top: 15px;
 }
+
+.back-up {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: right;
+}
+
+.back-up a {
+  text-decoration: none;
+  color: black;
+}
+
+.back-up a:hover {
+  color: #007fff;
+}
+
 /* ##this is the line break */
 .project-body1::after {
   content: "";
