@@ -8,7 +8,7 @@ import { RecentProjectsComponent } from './recent-projects/recent-projects.compo
 const routes: Routes = [
   { path: '', redirectTo: '/main', pathMatch: 'full' },
   { path: 'main', component: MainComponent },
-  { path: 'recent-projects', component: RecentProjectsComponent },
+  { path: 'uxportfolio', component: RecentProjectsComponent },
   { path: 'email', component: EmailComponent },
   { path: 'success', component: MessageSentComponent },
 ];
