@@ -134,6 +134,10 @@ p {
   padding-top: 40px;
   padding-bottom: 40px;
 }
+.no-link-style {
+  color: inherit; 
+  text-decoration: none;
+}
 @media (max-width: 768px) {
   .project-container {
     max-width: 90vw;
