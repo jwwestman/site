@@ -135,8 +135,12 @@ p {
   padding-bottom: 40px;
 }
 .no-link-style {
-  color: inherit; 
+  color: inherit;
   text-decoration: none;
+}
+#figma-button {
+  padding: 10px;
+  border-radius: 10px;
 }
 @media (max-width: 768px) {
   .project-container {
